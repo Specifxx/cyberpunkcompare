@@ -1,0 +1,54 @@
+# Decisions
+
+Newest at the bottom. The engine's own history (the lean Rift Compare
+playbook, eBay planning, matching rules, caching, forum, reports, seasons) is
+in the sister repos' DECISIONS.md (`Specifxx/GundamCompare`,
+`Specifxx/lorcanacompare`, `Specifxx/ygocompare`); code comments that cite a
+DECISIONS heading mean theirs unless it is below.
+
+## Why a Cyberpunk TCG site — 2026-11-01
+
+Owner asked whether Cyberpunk TCG was worth a site after affiliate sales of
+Cyberpunk cards showed up (most likely RiftCompare visitors buying on eBay
+within the 24-hour cookie). Research the same day: WeirdCo's Kickstarter
+raised US$28.35M from 50,773 backers (the most-funded tabletop campaign);
+Beta print shipped September 2026, retail release 6 November 2026; WeirdCo
+will not reprint a set or configuration; the Beta box (US$180 MSRP) sold
+around US$315 on TCGplayer in October with 223 eBay sales in 90 days.
+TCGplayer lists it (category 92, since 31 August), Cardmarket supports it in
+Europe. Of the 1,240 stores the sister sites track, 1,136 answered and 392
+listed Cyberpunk TCG (243 with three or more products). No site compared store
+prices for it (CHOOMDEX shows eBay and TCGplayer only). Owner: build it,
+domain cyberpunkcompare.com.
+
+Risks taken knowingly: a brand-new game with no track record and no date for
+set 2; "Cyberpunk" in the domain is CD PROJEKT's trademark (owner's call).
+
+## Beta and Retail are separate products, told apart by the title — 2026-11-01
+
+TCGplayer lists Welcome to Night City twice, "- Beta" and "- Retail", with
+identical card and sealed names, and the Beta box costs about twice the Retail
+one. A Beta price on the Retail box's page (or the reverse) is the worst kind
+of wrong match, and the 0.25×–4× plausibility guard cannot catch a 2× error.
+
+Engine option `SITE.setEditions` (off for the other games): the edition word
+is removed from set and sealed names for matching, and a title's edition must
+equal the product's. A title is Beta when it says "Beta", "36 packs" or
+"Kickstarter"/"backer"; otherwise it is Retail (the default edition) because
+stores selling the release-week box call it plain "Booster Box"; a title that
+points at both matches neither. The eBay pass applies the same rule, and its
+searches name the edition only for Beta. Pinned by `tests/set-editions.test.ts`.
+
+## Rarity codes spelled out — 2026-11-01
+
+TCGplayer stores Cyberpunk TCG rarities as codes (C, UC, R, E, S, IL, IO, IS,
+NR). Engine option `SITE.rarityNames` maps them at import, so pages, filters
+and rarity matching read "Iconic Legend", not "IL". IO is "Iconic" (TCGplayer's
+"other" Iconic cards); NR is Nova Rare (promos, box toppers, event prizes).
+
+## Its own eBay app — 2026-11-01
+
+Owner: Cyberpunk Compare gets a new eBay keyset; Gundam, Lorcana and YGO keep
+their shared app and budgets unchanged. `dailyBudget` 2,500 (half a keyset, so
+it can take a second site), cards from US$10, every sealed product. Runs at
+00:17 UTC. A no-op until the secrets exist.
