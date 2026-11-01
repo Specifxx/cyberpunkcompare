@@ -1,6 +1,7 @@
 name: Bootstrap (temporary, removed before merge)
 # First data for the launch branch: probe the candidate stores and run one
 # import without eBay, committing data/ back to this branch. Not for main.
+# (Re-run after the "Card [Set]" fix.)
 on:
   push:
     branches: [claude/project-thread-bfffut]
