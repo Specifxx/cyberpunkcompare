@@ -1,0 +1,39 @@
+name: Bootstrap (temporary, removed before merge)
+# First data for the launch branch: probe the candidate stores and run one
+# import without eBay, committing data/ back to this branch. Not for main.
+# (Re-run after the "Card [Set]" fix.)
+on:
+  push:
+    branches: [claude/project-thread-bfffut]
+    paths: [".github/workflows/bootstrap.yml", "research/**", "src/content/stores.ts"]
+permissions:
+  contents: write
+jobs:
+  probe:
+    if: ${{ !contains(github.event.head_commit.message, 'skip-probe') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npx tsx scripts/probe-stores.ts --hosts research/candidate-hosts.txt
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npx tsx scripts/import-all.ts
+        env: { EBAY_REFRESH: "false" }
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -m "data: first import (bootstrap, no eBay)"
+          for i in 1 2 3 4; do git push origin HEAD:${{ github.ref_name }} && exit 0; sleep $((2 ** i)); git pull --rebase origin ${{ github.ref_name }}; done
+          exit 1

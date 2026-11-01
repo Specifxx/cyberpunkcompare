@@ -83,7 +83,12 @@ export const SITE: SiteConfig = {
   sealedTypes: [
     [/\b(sleeves?|playmat|deck box|binder|dice|tokens?)\b/i, "Insert"],
     [/\bcase\b/i, "Case"],
-    [/starter deck display/i, "Starter Deck Display"],
+    // TCGplayer names a display "Starter Deck Display: The Heist - Beta"; stores
+    // use "Starter Deck Display" for ONE deck (Irresistible Force AU$44.99,
+    // Ultra Rare Cards £27.69, 2026-11-01), so a store's title without the
+    // colon is a type no product has and never matches.
+    [/starter deck display:/i, "Starter Deck Display"],
+    [/starter deck display/i, "Starter Deck Display (store)"],
     [/starter deck/i, "Starter Deck"],
     [/pre-?release|event kit/i, "Prerelease"],
     [/booster (box|display)/i, "Booster Box"],
