@@ -48,14 +48,16 @@ export const SITE: SiteConfig = {
     runHourUtc: 0,
   },
 
-  // TCGplayer numbers a card "012" inside its group (no set code, no total).
-  numberStyle: "fraction",
+  // TCGplayer numbers a card "012" in the Retail print and "B012" in the Beta
+  // one (no set code, no total); stores write the same ("Detonate (B031)").
+  numberStyle: "plain",
   // The first set exists twice under the same names: "Welcome to Night City -
   // Beta" (Kickstarter, 36-pack boxes) and "- Retail" (24-pack boxes, 6 Nov
   // 2026), at very different prices. Stores call the retail box plain
   // "Booster Box"; Beta is always named, or a 36-pack / Kickstarter box.
   setEditions: [
-    { word: "beta", implied: /\b36[- ]?(packs?|ct|count)\b|kickstarter|\bbackers?\b/i },
+    // "B031" is how the Beta print numbers its cards.
+    { word: "beta", implied: /\b36[- ]?(packs?|ct|count)\b|kickstarter|\bbackers?\b|\bB\d{3}\b/i },
     { word: "retail", default: true },
   ],
   rarityMustAgree: true,
