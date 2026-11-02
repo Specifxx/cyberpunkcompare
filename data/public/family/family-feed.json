@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-02T02:50:09.540Z",
+ "generatedAt": "2026-11-02T06:10:24.683Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,9 +19,9 @@
    "currency": "USD",
    "store": "Manathril Cards and Collectibles",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714499_200w.jpg",
-   "refCents": 4425,
+   "refCents": 4279,
    "refLabel": "TCGplayer market price",
-   "savingPct": 32
+   "savingPct": 30
   },
   {
    "kind": "deal",
@@ -33,9 +33,9 @@
    "currency": "USD",
    "store": "wolcow gaming",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
-   "refCents": 3425,
+   "refCents": 3374,
    "refLabel": "TCGplayer market price",
-   "savingPct": 27
+   "savingPct": 26
   },
   {
    "kind": "deal",
@@ -47,9 +47,9 @@
    "currency": "USD",
    "store": "Skybox Collectibles",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714498_200w.jpg",
-   "refCents": 3422,
+   "refCents": 3389,
    "refLabel": "TCGplayer market price",
-   "savingPct": 27
+   "savingPct": 26
   },
   {
    "kind": "deal",
@@ -61,9 +61,9 @@
    "currency": "USD",
    "store": "Minted TCG",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 15494,
+   "refCents": 15154,
    "refLabel": "TCGplayer market price",
-   "savingPct": 23
+   "savingPct": 21
   },
   {
    "kind": "deal",
@@ -75,9 +75,9 @@
    "currency": "USD",
    "store": "Holo Horse Games LLC",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
-   "refCents": 2518,
+   "refCents": 2447,
    "refLabel": "TCGplayer market price",
-   "savingPct": 21
+   "savingPct": 18
   },
   {
    "kind": "deal",
@@ -89,7 +89,7 @@
    "currency": "USD",
    "store": "Digital Heroes",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714346_200w.jpg",
-   "refCents": 34040,
+   "refCents": 33940,
    "refLabel": "TCGplayer market price",
    "savingPct": 12
   },
