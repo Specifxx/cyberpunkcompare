@@ -1,50 +1,24 @@
 name: Research (temporary)
-on: { push: { branches: [claude/project-thread-bfffut], paths: [.github/workflows/research.yml] } }
+on: { push: { branches: [claude/project-thread-bfffut], paths: [.github/workflows/research.yml, src/content/stores.ts] } }
 jobs:
-  r:
+  import:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 20, cache: npm }
       - run: npm ci
-      - name: Official store locator → candidate hosts
-        run: |
+      - run: npx tsx scripts/import-all.ts 2>&1 | grep -E "^\[store\]|error|Error" | head -400
+        env: { EBAY_REFRESH: "false" }
+  sg:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
           UA="cyberpunkcompare/1.0 (+https://cyberpunkcompare.com)"
-          B="https://api.netdeck.gg/api/cyberpunk/retailers/stores"
-          : > all.jsonl
-          for c in "39,-98" "45,-75" "50,-110" "37,-120" "33,-84" "42,-88" "30,-97" "47,-122" "53,-2" "56,-4" "51,10" "48,2" "45,10" "40,-4" "52,5" "59,15" "50,20" "-33,151" "-37,145" "-27,153" "-32,116" "-35,138" "-41,174" "-36,174" "1.35,103.8" "43,-79" "49,-123" "51,-114" "46,-71" "38,23" "53,-8" "39,-9"; do
-            curl -sL -A "$UA" "$B?lat=${c%,*}&lng=${c#*,}&maxRadiusMiles=1500" | jq -c '.stores[]?' >> all.jsonl; sleep 1; done
-          jq -s -r 'unique_by(.id)|.[]|select(.country|test("^(US|CA|GB|AU|SG|DE|FR|IT|ES|NL|BE|AT|IE|PT|FI|GR|SK|SI|LU|EE|LV|LT|MT|CY|HR)$"))|.socialWebsite // empty' all.jsonl \
-            | grep -viE 'facebook|instagram|tiktok|twitter|x\.com|discord|linktr|youtube|google\.|goo\.gl|ebay\.|amazon\.|cardmarket|tcgplayer|wixsite|square\.site|business\.site|yelp' \
-            | sed -E 's#^(https?://)?##; s#/.*$##; s#^www\.##' | tr 'A-Z' 'a-z' | grep '\.' | sort -u > research/locator-hosts.txt
-          wc -l research/locator-hosts.txt
-          cat research/locator-hosts.txt research/candidate-hosts.txt | sort -u > research/all-hosts.txt; wc -l research/all-hosts.txt
-      - name: Probe
-        run: npx tsx scripts/probe-stores.ts --hosts research/all-hosts.txt > probe.log 2>&1 || true; tail -n 3 probe.log
-      - name: Vet
-        run: |
-          cat > vet.mjs <<'JS'
-          import fs from "node:fs";
-          const { stores } = JSON.parse(fs.readFileSync("research/stores-probe.json", "utf8"));
-          const UA = { "user-agent": "cyberpunkcompare/1.0 (+https://cyberpunkcompare.com)" };
-          const banned = ["tcgsynergy"];
-          const out = [];
-          for (const s of stores) {
-            const host = new URL(s.base).hostname.replace(/^www\./, "");
-            const reg = host.split(".").slice(-2).join(".");
-            const dom = /\.(co|com)\.(uk|au|sg)$/.test(host) ? host.split(".").slice(-3).join(".") : reg;
-            let created = "?";
-            try { const r = await fetch(`https://rdap.org/domain/${dom}`, { headers: UA }); const j = await r.json(); created = (j.events || []).find((e) => e.eventAction === "registration")?.eventDate?.slice(0, 10) ?? "?"; } catch {}
-            let contact = false, refund = false;
-            try { const h = await (await fetch(s.base, { headers: UA })).text(); contact = /contact/i.test(h); refund = /refund|return/i.test(h); } catch {}
-            try { if (!refund) refund = (await fetch(`${s.base}/policies/refund-policy`, { headers: UA })).ok; } catch {}
-            out.push({ key: s.key, base: s.base, market: s.market, created, contact, refund, banned: banned.some((b) => host.includes(b)) });
-            await new Promise((r) => setTimeout(r, 400));
-          }
-          for (const o of out) console.log(`VET\t${o.market}\t${o.key}\t${o.base}\t${o.created}\tcontact=${o.contact}\trefund=${o.refund}\tbanned=${o.banned}`);
-          JS
-          node vet.mjs
-      - name: Results
-        run: sed -n '/===== STORES.TS =====/,/===== END =====/p' probe.log; sed -n '/===== SAMPLE TITLES =====/,$p' probe.log | head -400; grep -c "^\[ok\]" probe.log
+          curl -sL -A "$UA" "https://api.netdeck.gg/api/cyberpunk/retailers/stores?lat=1.35&lng=103.8&maxRadiusMiles=60" | jq -r '.stores[]|select(.country=="SG")|"\(.storeName)\t\(.socialWebsite // "")"' > sg.tsv; wc -l sg.tsv; cat sg.tsv
+          cut -f2 sg.tsv | grep -viE 'facebook|instagram|tiktok|linktr|^$' | sed -E 's#^(https?://)?##; s#/.*$##' | sort -u | while read h; do
+            m=$(curl -s -m 15 -A "$UA" "https://$h/meta.json" | jq -r '.currency // empty' 2>/dev/null)
+            n=$(curl -s -m 15 -A "$UA" "https://$h/search/suggest.json?q=cyberpunk&resources[type]=product&resources[limit]=10" | jq -r '.resources.results.products|length' 2>/dev/null)
+            c=$(curl -s -m 15 -A "$UA" "https://$h/collections.json?limit=250" | jq -r '[.collections[]?|select((.handle+" "+.title)|test("cyber|night";"i"))|.handle]|join(",")' 2>/dev/null)
+            echo "SG $h shopify=$m suggest=$n cols=$c"; sleep 1; done
