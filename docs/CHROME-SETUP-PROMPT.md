@@ -1,8 +1,8 @@
 # Claude in Chrome prompt: Cyberpunk Compare first-time setup
 
 Paste everything below the line into Claude in Chrome. Be signed in to Vercel,
-GitHub, Google (bill.jyang101@gmail.com), the eBay developer portal and Impact
-(TCGplayer affiliate) first. The code, the stores and the daily import are
+GitHub, Google (bill.jyang101@gmail.com) and the eBay developer
+portal first. The code, the stores and the daily import are
 already on GitHub (`Specifxx/cyberpunkcompare`); this is the account-side setup only.
 
 ---
@@ -51,10 +51,7 @@ Open https://github.com/Specifxx/cyberpunkcompare/settings/secrets/actions.
 3. Bing Webmaster Tools (https://www.bing.com/webmasters): Import from Google Search Console and tick cyberpunkcompare.com; then check the sitemap is listed, and add it if not.
 4. Yandex Webmaster (https://webmaster.yandex.com): Add site https://cyberpunkcompare.com, verify with the DNS (TXT) method, adding the record as above, then Indexing → Sitemap files → add the sitemap.
 
-## Task 6: Affiliate tags
-
-1. Impact (https://app.impact.com) → the TCGplayer program: if it lets you add a website/property, add https://cyberpunkcompare.com as a promotional property. Don't change anything else.
-2. eBay Partner Network (https://partnernetwork.ebay.com): Campaigns → note whether a campaign named for Cyberpunk Compare exists. Do NOT create one (the site uses campaign 5339155912 with a per-site customid, which already separates Cyberpunk sales). If EPN asks for a list of websites, add https://cyberpunkcompare.com.
+(No affiliate step: Cyberpunk Compare uses the eBay Partner Network campaign and the TCGplayer Impact link every Compare site already shares, tagged per site.)
 
 ## When you finish
 
