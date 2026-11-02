@@ -6,5 +6,11 @@ jobs:
     steps:
       - run: |
           UA="cyberpunkcompare/1.0 (+https://cyberpunkcompare.com)"
-          for u in "https://cyberpunktcg.com/api/cyberpunk/retailers/stores" "https://api.netdeck.gg/api/cyberpunk/retailers/stores" "https://cyberpunktcg.com/runtime-config.json"; do echo "== $u"; curl -sL -A "$UA" "$u" -o r.json -w "%{http_code} %{content_type}\n"; head -c 600 r.json; echo; done
-          grep -oE '.{60}runtime_config_unavailable.{0,10}|function mde\(\)\{[^}]*\}|function _i\([^)]*\)\{.{0,300}' <(curl -sL -A "$UA" https://cyberpunktcg.com/assets/index-txRK5ZpT.js) | head -5
+          B="https://api.netdeck.gg/api/cyberpunk/retailers/stores"
+          curl -sL -A "$UA" "$B?lat=40.7&lng=-74&maxRadiusMiles=50" | head -c 1500; echo
+          : > all.jsonl
+          for c in "39,-98" "45,-75" "50,-110" "37,-120" "33,-84" "42,-88" "30,-97" "47,-122" "53,-2" "56,-4" "51,10" "48,2" "45,10" "40,-4" "52,5" "59,15" "50,20" "-33,151" "-37,145" "-27,153" "-32,116" "-35,138" "-41,174" "-36,174" "1.35,103.8" "43,-79" "49,-123" "51,-114" "46,-71"; do
+            curl -sL -A "$UA" "$B?lat=${c%,*}&lng=${c#*,}&maxRadiusMiles=1500" | jq -c '.stores[]?' >> all.jsonl; sleep 1; done
+          jq -s 'unique_by(.id)|length' all.jsonl
+          jq -s -r 'unique_by(.id)|group_by(.country // .address.country // "?")|map("\(.[0].country // .[0].address.country // "?") \(length)")|.[]' all.jsonl
+          jq -s -r 'unique_by(.id)|.[]|[(.country // .address.country // "?"), (.website // .websiteUrl // .url // .web // ""), .name]|@tsv' all.jsonl | sort
