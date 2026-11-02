@@ -1,0 +1,133 @@
+{
+ "v": 1,
+ "site": "cyberpunk",
+ "generatedAt": "2026-11-02T02:50:09.540Z",
+ "links": {
+  "US": {
+   "deals": "https://cyberpunkcompare.com/black-friday",
+   "preorders": "https://cyberpunkcompare.com/preorders"
+  }
+ },
+ "items": [
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Starter Deck: The Heist - Retail",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-the-heist-retail",
+   "cents": 2999,
+   "currency": "USD",
+   "store": "Manathril Cards and Collectibles",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714499_200w.jpg",
+   "refCents": 4425,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 32
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Starter Deck: The Heist - Beta",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-the-heist-beta",
+   "cents": 2499,
+   "currency": "USD",
+   "store": "wolcow gaming",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
+   "refCents": 3425,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 27
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Starter Deck: Embracing Power - Retail",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-retail",
+   "cents": 2500,
+   "currency": "USD",
+   "store": "Skybox Collectibles",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714498_200w.jpg",
+   "refCents": 3422,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 27
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Welcome to Night City - Retail Booster Box",
+   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-box",
+   "cents": 11990,
+   "currency": "USD",
+   "store": "Minted TCG",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
+   "refCents": 15494,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 23
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Starter Deck: Embracing Power - Beta",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-beta",
+   "cents": 1999,
+   "currency": "USD",
+   "store": "Holo Horse Games LLC",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
+   "refCents": 2518,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 21
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Welcome to Night City - Beta Booster Box",
+   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-beta-booster-box",
+   "cents": 29995,
+   "currency": "USD",
+   "store": "Digital Heroes",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714346_200w.jpg",
+   "refCents": 34040,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 12
+  },
+  {
+   "kind": "preorder",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Embracing Power - Retail Starter Deck Starter Deck",
+   "url": "https://cyberpunkcompare.com/preorders/embracing-power-retail-starter-deck",
+   "cents": 1999,
+   "currency": "USD",
+   "store": "Double Infinity Gaming",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714498_200w.jpg",
+   "releaseDate": "2026-11-06"
+  },
+  {
+   "kind": "preorder",
+   "cluster": "cards",
+   "region": "US",
+   "title": "The Heist - Retail Starter Deck Starter Deck",
+   "url": "https://cyberpunkcompare.com/preorders/the-heist-retail-starter-deck",
+   "cents": 1999,
+   "currency": "USD",
+   "store": "Double Infinity Gaming",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714499_200w.jpg",
+   "releaseDate": "2026-11-06"
+  },
+  {
+   "kind": "preorder",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Welcome to Night City - Retail Booster Box",
+   "url": "https://cyberpunkcompare.com/preorders/welcome-to-night-city-retail",
+   "cents": 11990,
+   "currency": "USD",
+   "store": "Minted TCG",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
+   "releaseDate": "2026-11-06"
+  }
+ ]
+}
