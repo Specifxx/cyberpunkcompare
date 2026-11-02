@@ -6,6 +6,5 @@ jobs:
     steps:
       - run: |
           UA="cyberpunkcompare/1.0 (+https://cyberpunkcompare.com)"
-          curl -sL -A "$UA" https://cyberpunktcg.com/assets/index-txRK5ZpT.js -o a.js; wc -c a.js
-          grep -oE '.{80}[sS]tore[sS]?[^a-zA-Z].{120}' a.js | grep -iE 'fetch|get|api|`/|"/' | head -40
-          grep -oE '`/[a-zA-Z0-9/_${}.?=&-]*`|"/[a-z][a-zA-Z0-9/_-]*(store|locat|shop|retail)[a-zA-Z0-9/_-]*"' a.js | sort -u | head -40
+          for u in "https://cyberpunktcg.com/api/cyberpunk/retailers/stores" "https://api.netdeck.gg/api/cyberpunk/retailers/stores" "https://cyberpunktcg.com/runtime-config.json"; do echo "== $u"; curl -sL -A "$UA" "$u" -o r.json -w "%{http_code} %{content_type}\n"; head -c 600 r.json; echo; done
+          grep -oE '.{60}runtime_config_unavailable.{0,10}|function mde\(\)\{[^}]*\}|function _i\([^)]*\)\{.{0,300}' <(curl -sL -A "$UA" https://cyberpunktcg.com/assets/index-txRK5ZpT.js) | head -5
