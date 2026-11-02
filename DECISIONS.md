@@ -216,3 +216,17 @@ RiftCompare's account) and TCGplayer links go through RiftCompare's Impact link
 YGO Compare is removed (it was YGO's), and the Chrome setup prompt has no
 affiliate step. The eBay API keyset stays Cyberpunk's own (2026-11-01); the
 affiliate campaign is not an API key.
+
+## 2026-11-02 — Region switcher in the hero, with drawn flags
+
+Owner: "the region switcher must be more prevalent on all sites, on the main home page hero, and have the
+flags as well". The homepage hero now has a "Prices for" row of every region (flag + name, code on phones;
+`MarketChooser`), the header menu shows the flag and code of the region in use (a native select laid
+invisibly over them, so it stays keyboard- and screen-reader-friendly), and the price table's region pills
+carry flags.
+
+- **Flags are inline SVG (`src/components/Flag.tsx`), not emoji and not image files.** Windows draws a flag
+  emoji as two letters ("US"), and image files would be new requests and hosting. No ids or clip paths, so
+  a flag works inside a closed menu and many times on a page. The same file is in every Compare Empire
+  repo that has a region switcher; keep the copies identical.
+- Wording stays region-neutral: "Prices for", "Choose your region", never one country's spelling or name.
