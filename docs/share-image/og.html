@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,700;0,900;1,900&family=Inter:wght@600;700;800&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px;overflow:hidden;background:#050507}
+.s{position:relative;width:1200px;height:630px;overflow:hidden;
+ background:
+  radial-gradient(640px 360px at 1020px 120px, rgba(243,230,0,.20), transparent 70%),
+  radial-gradient(560px 340px at 80px 560px, rgba(0,229,255,.16), transparent 70%),
+  linear-gradient(rgba(0,229,255,.07) 1px,transparent 1px) 0 0/40px 40px,
+  linear-gradient(90deg,rgba(0,229,255,.07) 1px,transparent 1px) 0 0/40px 40px,
+  #07070b;font-family:Inter,sans-serif;color:#f4f4f7}
+.s:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.13) 0 1px,transparent 1px 3px);pointer-events:none}
+.haz{position:absolute;left:0;right:0;height:22px;background:repeating-linear-gradient(-45deg,#f3e600 0 18px,#050507 18px 36px)}
+.top{top:0}.bot{bottom:0}
+.bar{position:absolute;left:0;right:0;top:22px;height:3px;background:#f3e600;box-shadow:0 0 18px #f3e600}
+.bar2{position:absolute;left:0;right:0;bottom:22px;height:3px;background:#00e5ff;box-shadow:0 0 18px #00e5ff}
+.tag{position:absolute;top:44px;left:56px;font:800 17px 'JetBrains Mono',monospace;letter-spacing:.18em;color:#00e5ff;text-shadow:0 0 10px rgba(0,229,255,.7)}
+.tag b{color:#ff2a6d;text-shadow:0 0 10px rgba(255,42,109,.7)}
+.tagr{position:absolute;top:44px;right:56px;font:800 17px 'JetBrains Mono',monospace;letter-spacing:.18em;color:rgba(243,230,0,.85)}
+.logo{position:absolute;left:56px;top:96px;display:flex;align-items:center;gap:26px}
+.logo img{width:132px;height:132px;filter:drop-shadow(0 0 22px rgba(243,230,0,.45))}
+.w1{font:italic 900 104px/0.9 Tomorrow,sans-serif;color:#f3e600;letter-spacing:-.01em;
+ text-shadow:0 0 6px rgba(243,230,0,.9),0 0 28px rgba(243,230,0,.55),4px 0 0 rgba(255,42,109,.75),-4px 0 0 rgba(0,229,255,.75)}
+.w2{font:italic 900 104px/0.92 Tomorrow,sans-serif;color:#fff;letter-spacing:.02em;
+ text-shadow:0 0 22px rgba(0,229,255,.55),3px 0 0 rgba(0,229,255,.8)}
+.line{position:absolute;left:56px;top:338px;font:800 46px/1.12 Inter,sans-serif;letter-spacing:-.015em;width:700px}
+.line em{font-style:normal;color:#f3e600}
+.chips{position:absolute;left:56px;top:470px;display:flex;gap:14px}
+.chip{font:800 22px 'JetBrains Mono',monospace;padding:12px 18px;letter-spacing:.02em;
+ clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))}
+.y{background:#f3e600;color:#050507}
+.c{background:#00e5ff;color:#050507}
+.p{background:#ff2a6d;color:#fff}
+.panel{position:absolute;right:56px;top:300px;width:330px;padding:3px;background:#f3e600;
+ clip-path:polygon(0 0,calc(100% - 28px) 0,100% 28px,100% 100%,28px 100%,0 calc(100% - 28px));
+ box-shadow:0 0 40px rgba(243,230,0,.5)}
+.pin{background:#0b0b10;padding:20px 24px 22px;clip-path:polygon(0 0,calc(100% - 27px) 0,100% 27px,100% 100%,27px 100%,0 calc(100% - 27px))}
+.pl{font:800 15px 'JetBrains Mono',monospace;letter-spacing:.2em;color:#00e5ff}
+.pn{font:900 92px/1 Tomorrow,sans-serif;color:#f3e600;text-shadow:0 0 18px rgba(243,230,0,.6);margin-top:4px}
+.ps{font:700 23px/1.25 Inter,sans-serif;color:#fff;margin-top:4px}
+.mk{display:flex;gap:7px;margin-top:14px}
+.mk span{font:800 16px 'JetBrains Mono',monospace;border:2px solid #00e5ff;color:#00e5ff;padding:3px 7px}
+</style></head><body><div class="s">
+<div class="haz top"></div><div class="bar"></div>
+<div class="tag">// PRICE SCAN <b>ONLINE</b></div>
+<div class="tagr">CYBERPUNKCOMPARE.COM</div>
+<div class="logo"><img src="../../src/app/icon.svg"><div><div class="w1">CYBERPUNK</div><div class="w2">COMPARE</div></div></div>
+<div class="line">Cyberpunk TCG prices,<br>every store, <em>cheapest&nbsp;first.</em></div>
+<div class="chips"><div class="chip y">BOOSTER BOXES</div><div class="chip c">BETA + RETAIL</div><div class="chip p">SINGLES</div></div>
+<div class="panel"><div class="pin"><div class="pl">STORES SCANNED</div><div class="pn">160</div><div class="ps">game stores, plus TCGplayer and eBay</div>
+<div class="mk"><span>US</span><span>UK</span><span>CA</span><span>AU</span><span>EU</span></div></div></div>
+<div class="bar2"></div><div class="haz bot"></div>
+</div></body></html>
