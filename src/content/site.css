@@ -1,0 +1,218 @@
+/* ---------------------------------------------------------------------------
+   Cyberpunk Compare's own look (owner, 2026-11-02: "really cool … futuristic
+   cyberpunk theme … yellow and black and neon and graphic"). Loaded after the
+   engine's globals.css by app/layout.tsx; only this site has it.
+
+   Rules: pure CSS, no images, no script, no extra font. Decoration is
+   pseudo-elements with pointer-events:none, so every price and link is still
+   plain server HTML. Motion is one slow flicker and stops for
+   prefers-reduced-motion. Never CD PROJEKT or WeirdCo art (CLAUDE.md).
+   --------------------------------------------------------------------------- */
+
+:root {
+  --cp-yellow: #f3e600;
+  --cp-cyan: #00e5ff;
+  --cp-pink: #ff2a6d;
+  --cp-line: rgb(243 230 0 / 0.22);
+  --cp-cut: 12px; /* the clipped corner */
+  --cp-hazard: repeating-linear-gradient(-45deg, var(--cp-yellow) 0 10px, #050507 10px 20px);
+}
+
+/* ── Night City backdrop: a faint cyan grid and a yellow glow, behind everything ── */
+:root:not([data-theme="light"]) body {
+  background:
+    radial-gradient(70rem 30rem at 85% -8rem, rgb(243 230 0 / 0.10), transparent 60%),
+    radial-gradient(50rem 26rem at -10% 30rem, rgb(0 229 255 / 0.07), transparent 60%),
+    linear-gradient(rgb(0 229 255 / 0.045) 1px, transparent 1px) 0 0 / 44px 44px,
+    linear-gradient(90deg, rgb(0 229 255 / 0.045) 1px, transparent 1px) 0 0 / 44px 44px,
+    var(--page-bg);
+}
+/* CRT scanlines over the page, barely there. */
+:root:not([data-theme="light"]) body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgb(0 0 0 / 0.16) 0 1px, transparent 1px 3px);
+  mix-blend-mode: multiply;
+}
+::selection { background: var(--cp-yellow); color: #000; }
+
+/* ── Header: black bar on a hazard stripe ── */
+header.sticky {
+  background: rgb(5 5 7 / 0.92);
+  border-bottom: 0;
+  box-shadow: 0 1px 0 var(--cp-yellow), 0 6px 24px -10px rgb(243 230 0 / 0.55);
+}
+header.sticky::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 4px;
+  background: var(--cp-hazard);
+  opacity: 0.9;
+  pointer-events: none;
+}
+header.sticky nav a {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
+header.sticky nav a:hover { background: transparent; color: var(--cp-yellow); text-shadow: 0 0 10px rgb(243 230 0 / 0.7); }
+
+/* ── Wordmark: neon yellow with a slow flicker ── */
+.wordmark {
+  background: none;
+  color: var(--cp-yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 6px rgb(243 230 0 / 0.65), 0 0 22px rgb(243 230 0 / 0.35);
+}
+h1 .wordmark { animation: cp-flicker 7s linear infinite; }
+@keyframes cp-flicker {
+  0%, 91%, 93%, 96%, 100% { opacity: 1; }
+  92%, 95% { opacity: 0.55; text-shadow: none; }
+}
+
+/* ── Headings: display face, uppercase; h1 gets a chromatic glitch ── */
+main h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  text-shadow: 2px 0 0 rgb(255 42 109 / 0.55), -2px 0 0 rgb(0 229 255 / 0.55);
+}
+main h2 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+main section > div > div > h2::before,
+main section > h2::before {
+  content: "//";
+  margin-right: 0.45em;
+  color: var(--cp-cyan);
+  text-shadow: 0 0 8px rgb(0 229 255 / 0.6);
+}
+
+/* ── Hero: a yellow-framed panel with a cut corner and a hazard foot ── */
+.hero-band {
+  background:
+    linear-gradient(115deg, rgb(243 230 0 / 0.10), transparent 45%),
+    radial-gradient(36rem 16rem at 100% 0%, rgb(0 229 255 / 0.12), transparent 60%),
+    rgb(5 5 7 / 0.85);
+  border-top: 2px solid var(--cp-yellow);
+  border-bottom: 2px solid var(--cp-yellow);
+  box-shadow: inset 0 0 40px rgb(243 230 0 / 0.06);
+}
+@media (min-width: 768px) {
+  .hero-band {
+    border: 2px solid var(--cp-yellow);
+    border-radius: 0 !important;
+    clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 28px 100%, 0 calc(100% - 28px));
+  }
+}
+.hero-band::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(40%, 260px);
+  height: 8px;
+  background: var(--cp-hazard);
+  pointer-events: none;
+}
+
+/* ── Panels: cut corner, thin neon edge, yellow on hover ── */
+.card-surface {
+  border-radius: 0;
+  border-color: rgb(0 229 255 / 0.18);
+  background: linear-gradient(160deg, rgb(var(--c-ink-850)), rgb(var(--c-ink-900)) 60%);
+  clip-path: polygon(0 0, calc(100% - var(--cp-cut)) 0, 100% var(--cp-cut), 100% 100%, 0 100%);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+a.card-surface:hover, .card-surface:hover {
+  border-color: var(--cp-yellow);
+  box-shadow: inset 0 0 0 1px rgb(243 230 0 / 0.35), inset 0 0 24px rgb(243 230 0 / 0.08);
+}
+
+/* ── Buttons ── */
+.btn {
+  border-radius: 0;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+}
+.btn-primary {
+  background: var(--cp-yellow);
+  color: #000;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  box-shadow: 0 0 18px rgb(243 230 0 / 0.45);
+}
+.btn-primary:hover { background: #fff45c; }
+.btn-ghost { border-color: rgb(0 229 255 / 0.55); color: var(--cp-cyan); }
+.btn-ghost:hover { background: rgb(0 229 255 / 0.10); box-shadow: 0 0 14px rgb(0 229 255 / 0.35); }
+.btn-buy { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); }
+
+/* ── Chips read like terminal tags ── */
+.chip {
+  border-radius: 0;
+  border-color: rgb(0 229 255 / 0.35);
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Inputs (search) ── */
+main input[type="search"], main input[type="text"], header input {
+  border-radius: 0 !important;
+}
+main input[type="search"]:focus, main input[type="text"]:focus, header input:focus {
+  outline: none;
+  border-color: var(--cp-yellow) !important;
+  box-shadow: 0 0 0 1px var(--cp-yellow), 0 0 18px rgb(243 230 0 / 0.35);
+}
+
+/* ── Footer: hazard edge ── */
+footer { position: relative; border-top-color: var(--cp-yellow) !important; }
+footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: var(--cp-hazard);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* ── Light theme (a visitor's choice): keep it graphic, never yellow text on white ── */
+:root[data-theme="light"] {
+  --page-bg: #fbf8d8;
+}
+:root[data-theme="light"] .wordmark {
+  color: #0a0a0a;
+  text-shadow: none;
+  background: linear-gradient(transparent 58%, var(--cp-yellow) 58%);
+}
+:root[data-theme="light"] main h1 { text-shadow: 2px 0 0 rgb(255 42 109 / 0.35), -2px 0 0 rgb(0 229 255 / 0.45); }
+:root[data-theme="light"] .hero-band { background: #fffdf0; }
+:root[data-theme="light"] header.sticky { background: rgb(10 10 10 / 0.95); }
+:root[data-theme="light"] header.sticky nav a { color: #f5f5f5; }
+:root[data-theme="light"] .btn-ghost { color: #006b78; border-color: #006b78; }
+:root[data-theme="light"] .card-surface { background: #fff; border-color: rgb(0 0 0 / 0.15); }
+
+@media (prefers-reduced-motion: reduce) {
+  h1 .wordmark { animation: none; }
+}
+
+/* The header wordmark keeps its own spacing so it fits a phone. */
+header.sticky .wordmark { letter-spacing: 0; }
+@media (max-width: 639px) {
+  header.sticky a[aria-label$="home"] { font-size: 0.82rem; }
+}
