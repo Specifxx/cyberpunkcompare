@@ -205,3 +205,14 @@ The rules we keep, on every Compare Empire site:
 - Every link tagged, rel="sponsored nofollow"; no incentive (cashback, discount) for buying through it.
 - Engine: the footer carries the exact statement and trademark line; the quick view API sends no Amazon
   search; the Amazon row's button says "Check price" (not "View deal"); /go answers `no-store`.
+
+## 2026-11-02 — Affiliates: the family's shared EPN campaign and TCGplayer link
+
+Owner, 2026-11-02: Cyberpunk Compare uses the affiliate campaigns we already
+have. eBay links carry EPN campaign 5339155912 (every Compare site's, from
+RiftCompare's account) and TCGplayer links go through RiftCompare's Impact link
+(`src/lib/affiliate.ts`, engine); the `cyberpunk-` prefix in `customid` /
+`subId1` splits the earnings. The Impact site-verification meta copied from
+YGO Compare is removed (it was YGO's), and the Chrome setup prompt has no
+affiliate step. The eBay API keyset stays Cyberpunk's own (2026-11-01); the
+affiliate campaign is not an API key.
