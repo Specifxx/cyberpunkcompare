@@ -15,6 +15,7 @@ import { SITE } from "@/site.config";
 import { TCGCSV_INIT } from "@/lib/import/tcgcsv";
 
 const MARKET: Record<string, string> = { USD: "US", GBP: "UK", CAD: "CA", AUD: "AU", EUR: "EU", SGD: "SG" };
+const LISTED = new Set(SITE.stores.map((s) => new URL(s.base).hostname.replace(/^www\./, "")));
 const YGO_HANDLE = /cyberpunk|night-?city/i;
 const NOT_TCG = /2077|video|ps[45]|xbox|playstation|figure|statue|plush|apparel|shirt|hoodie|poster|book|novel|board-?game|tabletop-?rpg|\brpg\b|red-?rpg|sleeve|accessor|playmat|binder|deck-?box|graded|psa|bgs|cgc|pre-?owned|bulk/i;
 const YGO_TITLE = /cyberpunk|night city|starter deck|booster box|booster pack/i;
@@ -142,7 +143,7 @@ async function main() {
   const hostsArg = process.argv.indexOf("--hosts");
   const hostsFile = hostsArg > 0 ? process.argv[hostsArg + 1] : "research/candidate-hosts.txt";
   const hosts = fs.readFileSync(path.join(process.cwd(), hostsFile), "utf8").split("\n").map((s) => s.trim()).filter(Boolean).map((h) => (/^https?:\/\//.test(h) ? h : `https://${h}`));
-  const queue = hosts.slice();
+  const queue = [...new Set(hosts)].filter((h) => { try { return !LISTED.has(new URL(h).hostname.replace(/^www\./, "")); } catch { return false; } });
   const results: (Found | { host: string; skip: string })[] = [];
   // Six at a time: Shopify answers 429 to a runner that pages many shops at once.
   await Promise.all(Array.from({ length: 6 }, async () => {

@@ -251,3 +251,18 @@ every three-hourly price commit, because neither had the gate.
   (Vercel: when a branch matches several rules, any `true` wins). No preview is built for any branch or pull
   request, `[preview]` included; the older per-branch `false` entries stay for orphan commits' own copies.
 - So "push to prod" means land on the production branch; the release reaches visitors within a day.
+
+## 2026-11-02 — 69 stores from the official Cyberpunk TCG store locator
+
+Owner, 2026-11-02: "we need way more stores … 25+ per region, 200+ total". The
+official locator (cyberpunktcg.com/stores, 4,392 signed-up stores; its public
+`api.netdeck.gg/api/cyberpunk/retailers/stores` search, read from a runner with
+our own user agent) gave 2,269 store websites in our markets. `probe-stores.ts`
+(now skipping stores already listed) found 113 with a readable Shopify
+Cyberpunk collection; every one shows a contact page and a refund policy, none
+is on the banned list, and being in the official locator is the "known to
+other buyers" sign (TCGEmpire docs/store-vetting.md). A trial import kept only
+the 69 whose listings our matcher actually matched; the other 44 held only
+Cyberpunk RED RPG, Combat Zone miniatures or merch. Singapore stays at one
+store: of the locator's 24 Singapore stores, one has an online shop we can read
+and it has no Cyberpunk collection.
