@@ -52,3 +52,14 @@ Owner: Cyberpunk Compare gets a new eBay keyset; Gundam, Lorcana and YGO keep
 their shared app and budgets unchanged. `dailyBudget` 2,500 (half a keyset, so
 it can take a second site), cards from US$10, every sealed product. Runs at
 00:17 UTC. A no-op until the secrets exist.
+
+## 2026-11-02 — Self-updating price report
+
+The owner wants growth that runs without him ("a more passive, working in the background solution"): no daily Reddit
+posts. Links are the passive lever, and outreach needs a page worth linking to. `/price-report` is that page: one URL
+for good, rebuilt from the committed data every release (`src/lib/market-report.ts`, pure, tested), so nobody writes
+it. It says how often a US store undercuts TCGplayer's market price on cards from $5 and sealed from $10 (USD against
+USD, never converted), lists the most valuable sealed products a US store has in stock (cases left out: almost none
+are stocked), counts products in stock per market, shows the 30-day movers (7-day until a month of history exists) and
+ends with a citation line. `revalidate = 86400`, in the sitemap and footer. The daily outreach task offers it to
+writers and creators.
