@@ -6,8 +6,6 @@ jobs:
     steps:
       - run: |
           UA="cyberpunkcompare/1.0 (+https://cyberpunkcompare.com)"
-          curl -sL -A "$UA" https://cyberpunktcg.com/stores -o s.html; wc -c s.html
-          grep -oE '(src|href)="[^"]+\.js[^"]*"' s.html | head -30
-          grep -oE 'https?://[^"'"'"' ]*(api|json|store|locator|graphql)[^"'"'"' ]*' s.html | sort -u | head -40
-          grep -o '__NEXT_DATA__[^>]*>.\{0,600\}' s.html | head -c 1500
-          for js in $(grep -oE 'src="[^"]+\.js[^"]*"' s.html | sed 's/src="//;s/"$//' | head -40); do case $js in http*) u=$js;; *) u="https://cyberpunktcg.com$js";; esac; curl -sL -A "$UA" "$u" | grep -oE '"(https?:)?//[^"]*(api|stores|locator|graphql|supabase|firebase|storepoint|stockist|storemapper)[^"]*"|/api/[a-zA-Z0-9/_-]+' | sort -u | head -8; done
+          curl -sL -A "$UA" https://cyberpunktcg.com/assets/index-txRK5ZpT.js -o a.js; wc -c a.js
+          grep -oE '.{80}[sS]tore[sS]?[^a-zA-Z].{120}' a.js | grep -iE 'fetch|get|api|`/|"/' | head -40
+          grep -oE '`/[a-zA-Z0-9/_${}.?=&-]*`|"/[a-z][a-zA-Z0-9/_-]*(store|locat|shop|retail)[a-zA-Z0-9/_-]*"' a.js | sort -u | head -40
