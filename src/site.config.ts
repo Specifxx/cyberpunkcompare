@@ -114,7 +114,7 @@ export const SITE: SiteConfig = {
     pageDark: "#08080b",
     inkDark: ["#050507", "#0d0d12", "#14141b", "#1c1c26", "#2d2d3b", "#474759"],
     wordmarkGradient: "linear-gradient(180deg, #fffbb0 0%, #f3e600 55%, #b8ad00 100%)",
-    displayFont: "Tomorrow",
+    displayFont: "Plus Jakarta Sans",
   },
   halloween: {
     headline: "Night City after dark",
