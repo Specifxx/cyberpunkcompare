@@ -34,6 +34,7 @@ export const SITE: SiteConfig = {
   ownerEmail: "bill.jyang101@gmail.com",
 
   priceAlerts: true,
+  amazonAuTag: "cyberpunkcompare-22",
   tcgcsvCategoryId: 92,
   tcgplayerSlug: "cyberpunk-tcg",
   ebay: {
