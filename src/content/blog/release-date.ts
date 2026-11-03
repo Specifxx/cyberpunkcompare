@@ -22,14 +22,14 @@ export const post: Post = {
 
 <h2>Products and MSRP</h2>
 <ul>
-<li><b>Retail booster box</b> (24 packs): US$119.90</li>
-<li><b>Starter decks</b>, The Heist and Embracing Power: US$29.99 each</li>
-<li><b>Beta booster box</b> (36 packs, Kickstarter print): US$180</li>
+<li><b>Retail booster box</b> (24 packs): US$119.90. <a href="/card/welcome-to-night-city-retail-booster-box">Welcome to Night City booster box prices</a></li>
+<li><b>Starter decks</b>, <a href="/card/starter-deck-the-heist-retail">The Heist</a> and <a href="/card/starter-deck-embracing-power-retail">Embracing Power</a>: US$29.99 each</li>
+<li><b>Beta booster box</b> (36 packs, Kickstarter print): US$180. <a href="/card/welcome-to-night-city-beta-booster-box">Beta booster box prices</a></li>
 <li>Pre-release kits and booster cases are sold too. See <a href="/blog/cyberpunk-tcg-beta-vs-retail-booster-box">Beta vs Retail</a> for how the two boxes differ.</li>
 </ul>
 
 <h2>Where to buy</h2>
-<p>Hundreds of game stores carry it in the US, Canada, the UK, Europe, Australia and New Zealand. TCGplayer has listed Cyberpunk TCG since 31 August 2026, and Cardmarket supports it in Europe. Prices differ a lot from store to store, especially in release week, so check before you buy: the <a href="/sealed">sealed price list</a> compares every store we track, TCGplayer and the cheapest eBay listing, cheapest first in your currency, and the <a href="/stores">stores page</a> lists them all.</p>
+<p>Hundreds of game stores carry it in the US, Canada, the UK, Europe, Australia and New Zealand. TCGplayer has listed Cyberpunk TCG since 31 August 2026, and Cardmarket supports it in Europe. Prices differ a lot from store to store, especially in release week, so check before you buy: the <a href="/sealed">sealed price list</a> compares every store we track, TCGplayer and the cheapest eBay listing, cheapest first in your currency, and the <a href="/stores">stores page</a> lists them all. Every card in the set, with prices, is on the <a href="/sets/welcome-to-night-city-retail">Welcome to Night City card list</a>.</p>
 
 <h2>Tips</h2>
 <ol>
