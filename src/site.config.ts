@@ -16,6 +16,8 @@ export const SITE: SiteConfig = {
   domain: "cyberpunkcompare.com",
   // The bare domain is the address (owner, 2026-11-01: cyberpunkcompare.com).
   apexHost: true,
+  // A young, sealed-first game (launch plan, 2026-11-01): the homepage opens with the big sealed hero (owner, 2026-11-03).
+  homeSealedHero: true,
   tagline: "Compare Cyberpunk TCG prices across every store",
   description:
     "Free Cyberpunk TCG price comparison: live prices for Welcome to Night City booster boxes, starter decks and singles, Beta and Retail, across TCGplayer, eBay and game stores in the US, UK, Canada, Australia and Europe.",
