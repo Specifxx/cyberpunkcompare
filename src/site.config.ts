@@ -99,6 +99,17 @@ export const SITE: SiteConfig = {
     [/alpha kit/i, "Collection"],
   ],
   // Every rarity TCGplayer used on 2026-11-01, rarest first.
+  // Homepage copy for this game alone (SEO report, 2026-11-03; lib/home-faq.ts adds the live questions).
+  home: {
+    description: "Cyberpunk TCG prices for Welcome to Night City Beta and Retail booster boxes, starter decks and singles, kept apart, across TCGplayer, eBay and stores.",
+    h1: "prices, Beta and Retail, every store",
+    titles: ["Cyberpunk TCG Prices: Beta & Retail | Cyberpunk Compare"],
+    faqs: [
+      { q: "What's the difference between the Beta and Retail booster box?", a: "Welcome to Night City comes in two boxes: the Beta box (36 packs, sold to Kickstarter backers and registered stores) and the Retail box (24 packs, in stores). Both hold the same 12-card packs of the same set, but the Beta print carries Iconic card numbers the Retail print does not, and it trades well above the Retail price." },
+      { q: "How does Cyberpunk Compare tell Beta and Retail listings apart?", a: "From the listing title. A listing counts as Beta only when it says Beta, 36 packs or Kickstarter, and as Retail otherwise; a listing that names both is left out rather than guessed." },
+      { q: "Who makes the Cyberpunk TCG?", a: "WeirdCo, under licence, in CD PROJEKT RED's Night City. Cyberpunk Compare is an independent price comparison site and is not affiliated with either." },
+    ],
+  },
   rarityOrder: ["Iconic Secret", "Iconic Legend", "Iconic", "Secret", "Nova Rare", "Epic", "Rare", "Uncommon", "Common"],
   chaseRarities: ["Iconic Secret", "Iconic Legend", "Iconic", "Secret"],
   cardHubs: [
