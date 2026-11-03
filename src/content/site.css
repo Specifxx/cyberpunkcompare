@@ -98,7 +98,10 @@ main section > h2::before {
   text-shadow: 0 0 8px rgb(0 229 255 / 0.6);
 }
 
-/* ── Hero: a yellow-framed panel with a cut corner and a hazard foot ── */
+/* ── Hero: a full-bleed band between two yellow rules, with a hazard foot
+   (owner, 2026-11-03: "the hero needs to fill for all of the engine sites").
+   The band runs from the rail to the window edge, so no side frame and no
+   cut corners: they would sit against the edge of the screen. ── */
 .hero-band {
   background:
     linear-gradient(115deg, rgb(243 230 0 / 0.10), transparent 45%),
@@ -106,14 +109,8 @@ main section > h2::before {
     rgb(5 5 7 / 0.85);
   border-top: 2px solid var(--cp-yellow);
   border-bottom: 2px solid var(--cp-yellow);
+  border-radius: 0 !important;
   box-shadow: inset 0 0 40px rgb(243 230 0 / 0.06);
-}
-@media (min-width: 768px) {
-  .hero-band {
-    border: 2px solid var(--cp-yellow);
-    border-radius: 0 !important;
-    clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 28px 100%, 0 calc(100% - 28px));
-  }
 }
 .hero-band::after {
   content: "";
