@@ -461,3 +461,13 @@ Google treats that as an error, not a thin item. The card page now renders the
 Product block only when at least one in-stock US offer backs it (engine change,
 synced from Gundam Compare); a card with only a reference price has no Product
 markup rather than an invalid one. `tests/seo-audit.test.ts` pins it.
+
+## 2026-11-04 — HBT Collectables is removed and banned: they asked not to be linked
+
+HBT Collectables (hbtcollectables.com, AU) answered the store outreach email by sending it to their lawyers as
+"unauthorised linking" under their site's terms. The owner's call: take them off every site, apologise, send them
+no more visitors. Here the store leaves `src/content/stores.ts` (so `decodeOffer` drops any row of theirs an older
+data commit still holds) and its rows leave `data/public/` (prices, summary counts, meta) and the research
+files. Both hosts are on RiftCompare's `data/store-vetting/banned.json`, so the weekly vetting goes red if any
+site lists them again. Not a judgement on the store: it does not want the traffic, so we don't send it. The
+change rides the next daily data release.

@@ -20,7 +20,6 @@ export const STORES: StoreConfig[] = [
   { key: "gamersvillage", name: "Gamers Village", base: "https://gamers-village.com.au", market: "AU", collections: ["cyberpunk-tcg"], kind: "sealed" },
   { key: "gamesportal", name: "Games Portal", base: "https://gamesportal.com.au", market: "AU", collections: ["cyberpunk-tcg-sealed"], kind: "sealed" },
   { key: "goodgames", name: "Good Games", base: "https://goodgames.com.au", market: "AU", collections: ["cyberpunk-tcg"], kind: "sealed" },
-  { key: "hbtcollectables", name: "HBT Collectables", base: "https://hbtcollectables.com", market: "AU", collections: ["cyberpunk-tcg"], kind: "sealed" },
   { key: "irresistibleforce", name: "Irresistible Force", base: "https://irresistibleforce.com.au", market: "AU", collections: ["cyberpunk-tcg"], kind: "sealed" },
   { key: "justcardstuff", name: "Just Card Stuff", base: "https://justcardstuff.com.au", market: "AU", collections: ["events-cyberpunk-beta-prerelease"], kind: "sealed" },
   { key: "lightofcards", name: "Light of Cards", base: "https://lightofcards.com.au", market: "AU", collections: ["cyberpunk-tcg"], kind: "sealed" },
