@@ -77,6 +77,14 @@ sealed product does. The pass is a no-op until `EBAY_CLIENT_ID` /
 cap without the owner. `/api/ebay/account-deletion` must stay deployed while
 the keyset exists.
 
+## Amazon's price on sealed pages (owner, 2026-11-05)
+
+`scripts/amazon-asins.ts` (daily refresh) finds each sealed product's ASIN on each market's own Amazon, kept only when
+`matchSealed` lands on that product; `scripts/fetch-amazon-prices.ts` (first in every build) fetches those prices into the
+git-ignored `data/amazon-live/`; `lib/amazon-live.ts` gives the card page its Amazon row's link and 24-hour price. Prices
+are never committed, never a sort, cheapest, deal, feed or quick view. Credentials `AMAZON_CREATORS_AU_*` (GitHub + Vercel)
+serve every store; a store without API access is skipped. `tests/amazon-api.test.ts`; the ops monitor reads the status.
+
 ## Matching
 
 `src/lib/import/match.ts`: a wrong match is worse than none. Every card match
