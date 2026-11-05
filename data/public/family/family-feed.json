@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-04T06:28:29.431Z",
+ "generatedAt": "2026-11-05T06:52:11.815Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -13,29 +13,29 @@
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Welcome to Night City - Retail Booster Pack",
-   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-pack",
-   "cents": 499,
-   "currency": "USD",
-   "store": "Constellation Collective",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714496_200w.jpg",
-   "refCents": 1101,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 55
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
    "title": "Welcome to Night City - Beta Booster Pack",
    "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-beta-booster-pack",
    "cents": 699,
    "currency": "USD",
    "store": "Constellation Collective",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714347_200w.jpg",
-   "refCents": 1321,
+   "refCents": 1337,
    "refLabel": "TCGplayer market price",
-   "savingPct": 47
+   "savingPct": 48
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Welcome to Night City - Retail Booster Pack",
+   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-pack",
+   "cents": 599,
+   "currency": "USD",
+   "store": "Constellation Collective",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714496_200w.jpg",
+   "refCents": 999,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 40
   },
   {
    "kind": "deal",
@@ -47,7 +47,7 @@
    "currency": "USD",
    "store": "wolcow gaming",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
-   "refCents": 3455,
+   "refCents": 3495,
    "refLabel": "TCGplayer market price",
    "savingPct": 28
   },
@@ -55,15 +55,15 @@
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Welcome to Night City - Retail Booster Box",
-   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-box",
-   "cents": 11990,
+   "title": "Starter Deck: Embracing Power - Beta",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-beta",
+   "cents": 1999,
    "currency": "USD",
-   "store": "Minted TCG",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 13669,
+   "store": "Holo Horse Games LLC",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
+   "refCents": 2576,
    "refLabel": "TCGplayer market price",
-   "savingPct": 12
+   "savingPct": 22
   },
   {
    "kind": "deal",
@@ -75,23 +75,23 @@
    "currency": "USD",
    "store": "Retrofix Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714346_200w.jpg",
-   "refCents": 34211,
+   "refCents": 33851,
    "refLabel": "TCGplayer market price",
-   "savingPct": 12
+   "savingPct": 11
   },
   {
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Welcome to Night City - Retail Booster Box Case",
-   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-box-case",
-   "cents": 85000,
+   "title": "Welcome to Night City - Retail Booster Box",
+   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-box",
+   "cents": 11990,
    "currency": "USD",
-   "store": "Topspot Cards",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714494_200w.jpg",
-   "refCents": 93793,
+   "store": "Minted TCG",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
+   "refCents": 13267,
    "refLabel": "TCGplayer market price",
-   "savingPct": 9
+   "savingPct": 10
   },
   {
    "kind": "preorder",
