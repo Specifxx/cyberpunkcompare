@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-06T06:53:15.399Z",
+ "generatedAt": "2026-11-07T06:03:04.464Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,23 +19,9 @@
    "currency": "USD",
    "store": "Constellation Collective",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714347_200w.jpg",
-   "refCents": 1314,
+   "refCents": 1306,
    "refLabel": "TCGplayer market price",
-   "savingPct": 47
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Welcome to Night City - Retail Booster Pack",
-   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-pack",
-   "cents": 599,
-   "currency": "USD",
-   "store": "Constellation Collective",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714496_200w.jpg",
-   "refCents": 873,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 31
+   "savingPct": 46
   },
   {
    "kind": "deal",
@@ -47,37 +33,23 @@
    "currency": "USD",
    "store": "wolcow gaming",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
-   "refCents": 3486,
+   "refCents": 3332,
    "refLabel": "TCGplayer market price",
-   "savingPct": 28
+   "savingPct": 25
   },
   {
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Starter Deck: Embracing Power - Beta",
-   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-beta",
-   "cents": 1999,
+   "title": "Starter Deck: The Heist - Retail",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-the-heist-retail",
+   "cents": 2499,
    "currency": "USD",
    "store": "Holo Horse Games LLC",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
-   "refCents": 2691,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714499_200w.jpg",
+   "refCents": 2927,
    "refLabel": "TCGplayer market price",
-   "savingPct": 26
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Adam Smasher - Ender of Legends (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/adam-smasher-ender-of-legends-ilegend-welcome-to-night-city-beta",
-   "cents": 11375,
-   "currency": "USD",
-   "store": "Gear Gaming Bentonville",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714303_200w.jpg",
-   "refCents": 13791,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 18
+   "savingPct": 15
   },
   {
    "kind": "deal",
@@ -85,13 +57,41 @@
    "region": "US",
    "title": "Starter Deck: Embracing Power - Retail",
    "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-retail",
-   "cents": 2099,
+   "cents": 1999,
    "currency": "USD",
-   "store": "jawbreakers",
+   "store": "Holo Horse Games LLC",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714498_200w.jpg",
-   "refCents": 2321,
+   "refCents": 2306,
    "refLabel": "TCGplayer market price",
-   "savingPct": 10
+   "savingPct": 13
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Welcome to Night City - Retail Booster Pack",
+   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-pack",
+   "cents": 599,
+   "currency": "USD",
+   "store": "Constellation Collective",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714496_200w.jpg",
+   "refCents": 683,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 12
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Starter Deck: Embracing Power - Beta",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-beta",
+   "cents": 2499,
+   "currency": "USD",
+   "store": "Holo Horse Games LLC",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
+   "refCents": 2815,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 11
   }
  ]
 }
