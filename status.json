@@ -1,0 +1,43 @@
+{
+ "v": 1,
+ "site": "cyberpunkcompare.com",
+ "at": "2026-11-07T10:39:02.726Z",
+ "overall": "warn",
+ "checks": [
+  {
+   "name": "Live site",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "name": "A card page",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "name": "Daily price import",
+   "status": "ok",
+   "detail": "4.6h old"
+  },
+  {
+   "name": "Store imports",
+   "status": "warn",
+   "detail": "irresistibleforce: 0 matched; vaultcollectables: 0 matched; lamoodcomics: 0 matched; cardbuddys: 0 matched; cardcollector: 0 matched; funside: 0 matched; goosegames: 0 matched; loufoque: 0 matched; lagildastore: 0 matched; 1collectiblestcg: 0 matched; grimdice: 0 matched; boardgamesdallas: 0 matched; gglehi: 0 matched; gamersguildaz: 0 matched; evvgamingguild: 0 matched; kryptonitekollectibles: 0 matched; lspbstore: 0 matched; magessanctum: 0 matched; stateofcomics: 0 matched; 4gsgames: 0 matched; masterset: https://masterset.ca/collections/cyberpunk-tcg/products.json?limit=250&page=1&country=CA: fetch failed"
+  },
+  {
+   "name": "eBay budget",
+   "status": "ok",
+   "detail": "309/2500 calls on 2026-11-07, 103 eligible"
+  },
+  {
+   "name": "Family feed",
+   "status": "ok",
+   "detail": "6 items, 4.6h old; 8 sister feeds (rift, op, dex, mtg, gundam, lorcana, ygo, bandai)"
+  },
+  {
+   "name": "Amazon ASIN finder",
+   "status": "ok",
+   "detail": "AU: off, 5h ago; CA: off, 5h ago; EU: off, 5h ago; UK: off, 5h ago; US: off, 5h ago"
+  }
+ ]
+}
