@@ -53,6 +53,9 @@ export const SITE: SiteConfig = {
 
   // TCGplayer numbers a card "012" in the Retail print and "B012" in the Beta
   // one (no set code, no total); stores write the same ("Detonate (B031)").
+  // The low-traction cull (owner, 2026-11-07): cards under $1 leave the catalogue once their set is
+  // 120 days old (none is yet); any card page Search Console shows people finding stays.
+  catalogMinCardCents: 100,
   numberStyle: "plain",
   // The first set exists twice under the same names: "Welcome to Night City -
   // Beta" (Kickstarter, 36-pack boxes) and "- Retail" (24-pack boxes, 6 Nov
