@@ -37,6 +37,8 @@ export const SITE: SiteConfig = {
   amazonAuTag: "cyberpunkcompare-22",
   tcgcsvCategoryId: 92,
   tcgplayerSlug: "cyberpunk-tcg",
+  // Booster boxes in one Booster Box Case (eBay titles and store listings, 2026-11-07): a listing stating another count is another product.
+  caseUnits: 6,
   ebay: {
     // Card names ("V - Corporate Exile", "Minotaur") are not unique to the
     // game, so every search names it.
