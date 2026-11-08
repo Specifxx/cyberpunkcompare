@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-07T06:03:04.464Z",
+ "generatedAt": "2026-11-08T06:07:24.479Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,7 +19,7 @@
    "currency": "USD",
    "store": "Constellation Collective",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714347_200w.jpg",
-   "refCents": 1306,
+   "refCents": 1304,
    "refLabel": "TCGplayer market price",
    "savingPct": 46
   },
@@ -33,51 +33,9 @@
    "currency": "USD",
    "store": "wolcow gaming",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
-   "refCents": 3332,
+   "refCents": 3386,
    "refLabel": "TCGplayer market price",
-   "savingPct": 25
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Starter Deck: The Heist - Retail",
-   "url": "https://cyberpunkcompare.com/card/starter-deck-the-heist-retail",
-   "cents": 2499,
-   "currency": "USD",
-   "store": "Holo Horse Games LLC",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714499_200w.jpg",
-   "refCents": 2927,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 15
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Starter Deck: Embracing Power - Retail",
-   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-retail",
-   "cents": 1999,
-   "currency": "USD",
-   "store": "Holo Horse Games LLC",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714498_200w.jpg",
-   "refCents": 2306,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 13
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Welcome to Night City - Retail Booster Pack",
-   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-pack",
-   "cents": 599,
-   "currency": "USD",
-   "store": "Constellation Collective",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714496_200w.jpg",
-   "refCents": 683,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 12
+   "savingPct": 26
   },
   {
    "kind": "deal",
@@ -89,9 +47,51 @@
    "currency": "USD",
    "store": "Holo Horse Games LLC",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
-   "refCents": 2815,
+   "refCents": 2809,
    "refLabel": "TCGplayer market price",
    "savingPct": 11
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Welcome to Night City - Retail Booster Pack",
+   "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-pack",
+   "cents": 599,
+   "currency": "USD",
+   "store": "Constellation Collective",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714496_200w.jpg",
+   "refCents": 648,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 8
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Starter Deck: Embracing Power - Retail",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-retail",
+   "cents": 1999,
+   "currency": "USD",
+   "store": "Holo Horse Games LLC",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714498_200w.jpg",
+   "refCents": 2170,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 8
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Starter Deck: The Heist - Retail",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-the-heist-retail",
+   "cents": 2499,
+   "currency": "USD",
+   "store": "Holo Horse Games LLC",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714499_200w.jpg",
+   "refCents": 2709,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 8
   }
  ]
 }
