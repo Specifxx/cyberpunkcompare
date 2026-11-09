@@ -218,6 +218,7 @@ export const STORES: StoreConfig[] = [
   { key: "impactleaguetcg", name: "Impact League TCG", base: "https://impactleaguetcg.co.uk", market: "UK", collections: ["cyberpunk"], kind: "sealed" },
   { key: "mightylancergames", name: "Mighty Lancer Games", base: "https://mightylancergames.co.uk", market: "UK", collections: ["cyberpunk-trading-card-game"], kind: "sealed" },
   { key: "thecollectibleslounge", name: "Welcome to The Collectibles Lounge", base: "https://thecollectibleslounge.com", market: "UK", collections: ["cyberpunk-tcg"], kind: "sealed" },
+  { key: "tokyotoys", name: "TokyoToys", base: "https://tokyotoys.com", market: "UK", collections: ["all-tcg"], kind: "sealed" },
   { key: "theludoquist", name: "The Ludoquist", base: "https://theludoquist.com", market: "UK", collections: ["cyberpunk-tcg"], kind: "both" },
   { key: "4gsgames", name: "4GS Games", base: "https://4gsgames.com", market: "US", collections: ["cyberpunk-tcg"], kind: "sealed" },
   { key: "bentonville", name: "Gear Gaming Bentonville", base: "https://bentonville.geargamingstore.com", market: "US", collections: ["cyberpunk-tcg"], kind: "both" },

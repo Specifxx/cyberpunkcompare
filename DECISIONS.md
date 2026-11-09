@@ -808,3 +808,21 @@ matcher runs here, so the fix is ported (Gundam Compare DECISIONS.md, 2026-11-08
   name the product's own set, or a set whose name the product's set carries. A store's typo loses a row rather than a
   guess putting it on the wrong page.
 - Replaying the stored rows: one Chinese listing ("...-副本") stops matching on Cyberpunk Compare; nothing changes on Lorcana Compare.
+
+## 2026-11-09 — TokyoToys (UK) added; read through its `all-tcg` collection
+
+Bill asked for TokyoToys (tokyotoys.com, Shopify, GBP, Birmingham head office, UK mainland delivery only, Royal Mail / DPD).
+Vetted by hand: not on the family ban list; "TokyoToys UK Ltd" with four physical shops, phone, address, refund policy
+(trading card sales are final, which is its right). It lists two Cyberpunk TCG products, the Welcome to Night City Retail
+Booster Box (24, £120) and Booster Pack (£5), no starter decks.
+
+- It has no Cyberpunk collection and the tag URL 404s, so the store is read through `all-tcg`. That collection's
+  products.json returns only its newest 100 products and no second page, so the two items can fall out of it when the store
+  adds a hundred newer TCG products; the price then disappears rather than going stale. Recheck if the row vanishes.
+- Stock is real: the variants carry `inventory_management: shopify`, the page says "30 in stock" and `og:availability` is
+  `instock`; the importer's `available` flag is what shows. Titles carry a "RELEASE 30th OCT 2026:" prefix and still match
+  the Retail products (`tests/set-editions.test.ts`).
+- No store logos exist on this site (stores are shown by name), so none was added.
+- Not a fit for BandaiCompare: its Digimon, Dragon Ball and Union Arena searches return no sealed product. It does carry
+  Gundam, Riftbound, MTG, Yu-Gi-Oh!, Lorcana and One Piece sealed, so those sites are candidates.
+- Awin / Impact: nothing found that lists it; if it is an Awin programme we have joined, `awin.ts` tags it automatically.

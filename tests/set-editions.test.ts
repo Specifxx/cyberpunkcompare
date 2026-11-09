@@ -31,6 +31,12 @@ test("a title that names no edition is the default (Retail) one", () => {
   assert.equal(matchSealed("Cyberpunk TCG - Welcome to Night City Booster Pack", idx)?.product.id, 13);
 });
 
+// TokyoToys (UK, 2026-11-09) prefixes every title with its release date.
+test("TokyoToys titles with a RELEASE date prefix match the Retail products", () => {
+  assert.equal(matchSealed("RELEASE 30th OCT 2026: Cyberpunk TCG - Welcome to Night City Booster Box (24 Packs)", idx)?.product.id, 11);
+  assert.equal(matchSealed("RELEASE 30th OCT 2026: Cyberpunk TCG - Welcome to Night City Retail Booster Pack (12 Cards)", idx)?.product.id, 13);
+});
+
 test("Beta, or a 36-pack / Kickstarter box, is only ever the Beta product", () => {
   assert.equal(matchSealed("Cyberpunk TCG Welcome to Night City Beta Booster Box", idx)?.product.id, 10);
   assert.equal(matchSealed("Cyberpunk TCG: Welcome to Night City Booster Box (36 Packs)", idx)?.product.id, 10);
