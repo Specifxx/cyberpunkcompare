@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-08T06:07:24.479Z",
+ "generatedAt": "2026-11-09T06:38:03.587Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,7 +19,7 @@
    "currency": "USD",
    "store": "Constellation Collective",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714347_200w.jpg",
-   "refCents": 1304,
+   "refCents": 1285,
    "refLabel": "TCGplayer market price",
    "savingPct": 46
   },
@@ -33,23 +33,23 @@
    "currency": "USD",
    "store": "wolcow gaming",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
-   "refCents": 3386,
+   "refCents": 3497,
    "refLabel": "TCGplayer market price",
-   "savingPct": 26
+   "savingPct": 29
   },
   {
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Starter Deck: Embracing Power - Beta",
-   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-beta",
-   "cents": 2499,
+   "title": "Adam Smasher - Ender of Legends (ILegend)",
+   "url": "https://cyberpunkcompare.com/card/adam-smasher-ender-of-legends-ilegend-welcome-to-night-city-beta",
+   "cents": 11375,
    "currency": "USD",
-   "store": "Holo Horse Games LLC",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
-   "refCents": 2809,
+   "store": "Gear Gaming Bentonville",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714303_200w.jpg",
+   "refCents": 13764,
    "refLabel": "TCGplayer market price",
-   "savingPct": 11
+   "savingPct": 17
   },
   {
    "kind": "deal",
@@ -69,13 +69,13 @@
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Starter Deck: Embracing Power - Retail",
-   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-retail",
-   "cents": 1999,
+   "title": "Starter Deck: Embracing Power - Beta",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-beta",
+   "cents": 2499,
    "currency": "USD",
    "store": "Holo Horse Games LLC",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714498_200w.jpg",
-   "refCents": 2170,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
+   "refCents": 2705,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
@@ -83,13 +83,13 @@
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Starter Deck: The Heist - Retail",
-   "url": "https://cyberpunkcompare.com/card/starter-deck-the-heist-retail",
-   "cents": 2499,
+   "title": "Sasha Yakovleva - Won't Let You Down (ISecret)",
+   "url": "https://cyberpunkcompare.com/card/sasha-yakovleva-wont-let-you-down-isecret",
+   "cents": 68396,
    "currency": "USD",
-   "store": "Holo Horse Games LLC",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714499_200w.jpg",
-   "refCents": 2709,
+   "store": "PunkOuter Games",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/729850_200w.jpg",
+   "refCents": 74344,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   }
