@@ -826,3 +826,10 @@ Booster Box (24, £120) and Booster Pack (£5), no starter decks.
 - Not a fit for BandaiCompare: its Digimon, Dragon Ball and Union Arena searches return no sealed product. It does carry
   Gundam, Riftbound, MTG, Yu-Gi-Oh!, Lorcana and One Piece sealed, so those sites are candidates.
 - Awin / Impact: nothing found that lists it; if it is an Awin programme we have joined, `awin.ts` tags it automatically.
+
+
+## 2026-11-09 — Navigation by the game's own dimensions (owner: "navigation is very, very important")
+
+Same engine change as Lorcana Compare (see its DECISIONS.md, 2026-11-09): one list from the hubs that exist (`lib/shop-nav.ts`)
+feeds the header dropdowns, the rail's "Shop by colour / card type" groups and a phone menu. Cyberpunk's own dimensions come from
+`SITE.cardHubs` (colour, card type) plus rarity, sets (Beta and Retail sets are separate entries) and sealed type. No new page.
