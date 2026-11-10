@@ -72,7 +72,9 @@ the stores' own, hotlinked. Keep the not-affiliated line in the footer,
 ## eBay
 
 Cyberpunk Compare has its OWN eBay app (owner, 2026-11-01), not the one
-Gundam, Lorcana and YGO share: `SITE.ebay.dailyBudget` 2,500 calls a day,
+Gundam, Lorcana and YGO share. Since 2026-11-10 (owner) BandaiCompare and
+MotorCompare ride it too: MotorCompare 3,300, BandaiCompare 1,000, this site
+`SITE.ebay.dailyBudget` 600 calls a day (the three must total 4,900 or less),
 counted in `data/state/ebay-usage.json`. Cards under $10 get no call; every
 sealed product does. The pass is a no-op until `EBAY_CLIENT_ID` /
 `EBAY_CLIENT_SECRET` exist. Never point it at a sister's keyset or raise the

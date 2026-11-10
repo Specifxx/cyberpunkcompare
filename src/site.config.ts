@@ -47,9 +47,10 @@ export const SITE: SiteConfig = {
     sealedCategoryId: "183456",
     minPriceUsd: 10,
     // Its OWN eBay app (owner, 2026-11-01: a new keyset, not the one Gundam,
-    // Lorcana and YGO share). Half its 5,000 a day, so the keyset can take a
-    // second site; the catalogue needs far less. Raise only with the owner.
-    dailyBudget: 2500,
+    // Lorcana and YGO share), now shared three ways (owner, 2026-11-10):
+    // MotorCompare 3,300, BandaiCompare 1,000, Cyberpunk Compare 600 of its
+    // 5,000 a day. The catalogue spends about 360. Raise only with the owner.
+    dailyBudget: 600,
     runHourUtc: 0,
   },
 
