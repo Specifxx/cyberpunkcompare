@@ -76,7 +76,9 @@ Gundam, Lorcana and YGO share. Since 2026-11-10 (owner) BandaiCompare and
 MotorCompare ride it too: MotorCompare 3,300, BandaiCompare 1,000, this site
 `SITE.ebay.dailyBudget` 600 calls a day (the three must total 4,900 or less),
 counted in `data/state/ebay-usage.json`. Cards under $10 get no call; every
-sealed product does. The pass is a no-op until `EBAY_CLIENT_ID` /
+sealed product does. The split between eBay sites is `SITE.ebay.marketShares` (owner's
+region split, 2026-11-10: US 0.4, UK, Australia and Canada 0.2 each, about 480 of the
+600; the US always runs first). The pass is a no-op until `EBAY_CLIENT_ID` /
 `EBAY_CLIENT_SECRET` exist. Never point it at a sister's keyset or raise the
 cap without the owner. `/api/ebay/account-deletion` must stay deployed while
 the keyset exists.

@@ -866,3 +866,17 @@ own counter showed 4,240 calls left 38 minutes before the daily reset. MotorComp
 keyset with 10,957 of 12,141 products never searched, moves here. The owner approved the split: MotorCompare 3,300,
 BandaiCompare 1,000, Cyberpunk Compare 600 (4,900, 100 spare). `SITE.ebay.dailyBudget` is site config, not engine, so there
 is nothing to sync. Raise it again only with the owner, and only by taking the same amount from one of the other two.
+
+## 2026-11-10: Canada becomes an eBay market (`SITE.ebay.marketShares`)
+
+**Why.** The 30 days to 11 Nov (`/mnt/project-files/strategy/ebay-site-region-split-2026-11-10.html`): 86 Canadian
+visitors and no Canadian eBay search, so a Canadian visitor's eBay row was empty. The catalogue has about 120 eligible
+products and each of the US, UK and Australia searched all 120 a day (360 calls). Bill approved the recommended region
+split the same day. Also needed for the new 600 cap (2026-11-10): with the old fixed shares, 0.125 of 600 is 75, which
+would have stopped the UK and Australia covering every product.
+
+**What.** The engine option `SITE.ebay.marketShares` (Lorcana Compare's entry of the same day has the mechanism; the
+code is identical). Cyberpunk sets US 0.4, UK, AU and CA 0.2 each: 240 US slots for its 120 products and 120 for each
+other market. A dry run on today's catalogue and state plans US 120 / UK 120 / AU 120 / CA 120 = 480 of 600 for the next
+two runs (on a 300-call day: US 120, then 60 each). The site cap, and the keyset shared with BandaiCompare (1,000) and
+MotorCompare (3,300), are unchanged. Canada uses `EBAY_CA`: Canadian sellers, CAD, stated postage.
