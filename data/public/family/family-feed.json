@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-09T06:38:03.587Z",
+ "generatedAt": "2026-11-10T07:24:04.959Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,7 +19,7 @@
    "currency": "USD",
    "store": "Constellation Collective",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714347_200w.jpg",
-   "refCents": 1285,
+   "refCents": 1303,
    "refLabel": "TCGplayer market price",
    "savingPct": 46
   },
@@ -33,23 +33,9 @@
    "currency": "USD",
    "store": "wolcow gaming",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
-   "refCents": 3497,
+   "refCents": 3561,
    "refLabel": "TCGplayer market price",
-   "savingPct": 29
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Adam Smasher - Ender of Legends (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/adam-smasher-ender-of-legends-ilegend-welcome-to-night-city-beta",
-   "cents": 11375,
-   "currency": "USD",
-   "store": "Gear Gaming Bentonville",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714303_200w.jpg",
-   "refCents": 13764,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 17
+   "savingPct": 30
   },
   {
    "kind": "deal",
@@ -57,11 +43,25 @@
    "region": "US",
    "title": "Welcome to Night City - Retail Booster Pack",
    "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-pack",
-   "cents": 599,
+   "cents": 499,
    "currency": "USD",
-   "store": "Constellation Collective",
+   "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714496_200w.jpg",
-   "refCents": 648,
+   "refCents": 705,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 29
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "River Ward - Detective on the Hunt (ILegend)",
+   "url": "https://cyberpunkcompare.com/card/river-ward-detective-on-the-hunt-ilegend-welcome-to-night-city-beta",
+   "cents": 11486,
+   "currency": "USD",
+   "store": "PunkOuter Games",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714310_200w.jpg",
+   "refCents": 12485,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
@@ -69,13 +69,13 @@
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Starter Deck: Embracing Power - Beta",
-   "url": "https://cyberpunkcompare.com/card/starter-deck-embracing-power-beta",
-   "cents": 2499,
+   "title": "Alt Cunningham - Soulkiller Architect (ILegend)",
+   "url": "https://cyberpunkcompare.com/card/alt-cunningham-soulkiller-architect-ilegend-welcome-to-night-city-beta",
+   "cents": 21489,
    "currency": "USD",
-   "store": "Holo Horse Games LLC",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714344_200w.jpg",
-   "refCents": 2705,
+   "store": "PunkOuter Games",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714317_200w.jpg",
+   "refCents": 23318,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
@@ -85,11 +85,11 @@
    "region": "US",
    "title": "Sasha Yakovleva - Won't Let You Down (ISecret)",
    "url": "https://cyberpunkcompare.com/card/sasha-yakovleva-wont-let-you-down-isecret",
-   "cents": 68396,
+   "cents": 63917,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/729850_200w.jpg",
-   "refCents": 74344,
+   "refCents": 69475,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   }
