@@ -833,3 +833,13 @@ Booster Box (24, £120) and Booster Pack (£5), no starter decks.
 Same engine change as Lorcana Compare (see its DECISIONS.md, 2026-11-09): one list from the hubs that exist (`lib/shop-nav.ts`)
 feeds the header dropdowns, the rail's "Shop by colour / card type" groups and a phone menu. Cyberpunk's own dimensions come from
 `SITE.cardHubs` (colour, card type) plus rarity, sets (Beta and Retail sets are separate entries) and sealed type. No new page.
+
+## 2026-11-10: Three posts for the questions Search Console shows we nearly answer (CYB-1)
+
+The blog brings 17 of 21 Google clicks. The 90-day query report (TCGEmpire `gsc-queries`, which now lists every question and "vs"
+query) showed three clusters without a post of their own: the card list and card prices ("cyberpunk tcg cards list", "all
+cards", "price guide"), the Legends ("all legends", "johnny silverhand card price") and pack counts ("how many packs in a
+cyberpunk booster box", "pull rates"). One post each: `card-list.ts`, `legends.ts`, `packs-in-a-box.ts`. Every number is this
+site's catalogue or TCGplayer's market price on 10 November 2026, dated in the copy; pack counts and MSRP are WeirdCo's (GAMA
+Expo 2026, as the earlier posts). No pull rates and no box-topper ratio: WeirdCo has not published them. Content only, so no
+engine sync.
