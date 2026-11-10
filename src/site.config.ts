@@ -51,6 +51,10 @@ export const SITE: SiteConfig = {
     // MotorCompare 3,300, BandaiCompare 1,000, Cyberpunk Compare 600 of its
     // 5,000 a day. The catalogue spends about 360. Raise only with the owner.
     dailyBudget: 600,
+    // Canada joins (owner's region split, 2026-11-10: 86 Canadian visitors a month, no Canadian eBay search). The
+    // catalogue has about 120 eligible products, so 0.2 each (120 a day) searches every one in the UK, Australia and
+    // Canada daily, and the US's 240 slots cover its 120 with room: about 480 of the 600.
+    marketShares: { US: 0.4, UK: 0.2, AU: 0.2, CA: 0.2 },
     runHourUtc: 0,
   },
 
