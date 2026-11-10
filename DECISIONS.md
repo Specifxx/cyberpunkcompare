@@ -857,3 +857,12 @@ largest bill line until it moved to its CDN pattern (2026-10-17).
   revalidates under six hours.
 - Engine change: identical in Lorcana and Cyberpunk Compare (only the changed files were copied, because Cyberpunk's
   `tests/set-editions.test.ts` already carried a TokyoToys case Lorcana lacks).
+
+## 2026-11-10: eBay budget 2,500 to 600; the keyset now carries MotorCompare too (owner)
+
+The eBay review (`/mnt/project-files/strategy/ebay-api-distribution-2026-11-10.html`) measured this keyset at 1,124 of its
+5,000 calls a day: this site 360 (393 product and market pairs in all), BandaiCompare 764 since it went sealed only. eBay's
+own counter showed 4,240 calls left 38 minutes before the daily reset. MotorCompare, held at 600 on Compare Empire's full
+keyset with 10,957 of 12,141 products never searched, moves here. The owner approved the split: MotorCompare 3,300,
+BandaiCompare 1,000, Cyberpunk Compare 600 (4,900, 100 spare). `SITE.ebay.dailyBudget` is site config, not engine, so there
+is nothing to sync. Raise it again only with the owner, and only by taking the same amount from one of the other two.

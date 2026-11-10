@@ -15,7 +15,7 @@ The only game-specific files are `src/site.config.ts` and `src/content/`
 GitHub Actions, daily 00:17 UTC (refresh-prices.yml)
   TCGCSV (TCGplayer catalogue + prices, category 92)
   + every Shopify store in src/content/stores.ts  (products.json)
-  + eBay Browse API, budgeted (own app, 2,500 calls/day, cards from $10, all sealed)
+  + eBay Browse API, budgeted (own app shared with BandaiCompare and MotorCompare, 600 calls/day, cards from $10, all sealed)
   → data/public/*.json, data/history/<set>.json, data/state/*.json
   → commit to main with "[deploy]" in the subject  → one Vercel build a day
   → IndexNow ping
