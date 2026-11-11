@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-10T07:24:04.959Z",
+ "generatedAt": "2026-11-11T06:30:01.221Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,23 +19,9 @@
    "currency": "USD",
    "store": "Constellation Collective",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714347_200w.jpg",
-   "refCents": 1303,
+   "refCents": 1297,
    "refLabel": "TCGplayer market price",
    "savingPct": 46
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Starter Deck: The Heist - Beta",
-   "url": "https://cyberpunkcompare.com/card/starter-deck-the-heist-beta",
-   "cents": 2499,
-   "currency": "USD",
-   "store": "wolcow gaming",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
-   "refCents": 3561,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 30
   },
   {
    "kind": "deal",
@@ -47,9 +33,37 @@
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714496_200w.jpg",
-   "refCents": 705,
+   "refCents": 736,
    "refLabel": "TCGplayer market price",
-   "savingPct": 29
+   "savingPct": 32
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Starter Deck: The Heist - Beta",
+   "url": "https://cyberpunkcompare.com/card/starter-deck-the-heist-beta",
+   "cents": 2999,
+   "currency": "USD",
+   "store": "Holo Horse Games LLC",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714345_200w.jpg",
+   "refCents": 3521,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 15
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Panam Palmer - Nomad Cavalry (ILegend)",
+   "url": "https://cyberpunkcompare.com/card/panam-palmer-nomad-cavalry-ilegend-welcome-to-night-city-beta",
+   "cents": 10680,
+   "currency": "USD",
+   "store": "PunkOuter Games",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714316_200w.jpg",
+   "refCents": 11609,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 8
   },
   {
    "kind": "deal",
@@ -69,27 +83,13 @@
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Alt Cunningham - Soulkiller Architect (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/alt-cunningham-soulkiller-architect-ilegend-welcome-to-night-city-beta",
-   "cents": 21489,
-   "currency": "USD",
-   "store": "PunkOuter Games",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714317_200w.jpg",
-   "refCents": 23318,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 8
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
    "title": "Sasha Yakovleva - Won't Let You Down (ISecret)",
    "url": "https://cyberpunkcompare.com/card/sasha-yakovleva-wont-let-you-down-isecret",
-   "cents": 63917,
+   "cents": 58798,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/729850_200w.jpg",
-   "refCents": 69475,
+   "refCents": 63911,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   }
