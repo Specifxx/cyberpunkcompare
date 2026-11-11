@@ -16,7 +16,7 @@ export interface FetchLiveCard {
   no: string;
   /** card name */
   n: string;
-  /** "Normal" | "Cold Foil" */
+  /** "Normal" | "Foil" */
   f: string;
   /** condition the price is for (Near Mint, else the best raw condition) */
   c: string;
@@ -30,7 +30,7 @@ export interface FetchLiveFile {
   cards: FetchLiveCard[];
 }
 export interface FetchRow {
-  /** "Normal" | "Cold Foil" */
+  /** "Normal" | "Foil" */
   finish: string;
   condition: string;
   priceCents: number;
@@ -76,10 +76,13 @@ function load(): typeof cache {
   return cache;
 }
 
+/** Fetch names a card by its character alone ("Adam Smasher"); the catalogue adds the title and rarity ("Adam Smasher - Ender of Legends (Epic)"). */
+const characterOf = (name: string) => norm(name.split(/\s+-\s+|\s+\(/)[0]);
+
 /**
- * Fetch's listings of exactly this card: the same collector number in the same set AND the same name. One row per finish
- * (Normal, Cold Foil), each the cheapest in-stock Fetch listing; two Fetch cards on one number with different names is
- * no row: a wrong price is worse than none.
+ * Fetch's listings of exactly this card: the same collector number in the same set (Beta and Retail are different sets,
+ * numbered "B001" and "001") AND the same character name. One row per finish (Normal, Foil), the cheapest in-stock
+ * listing; two Fetch cards on one number with different names is no row: a wrong price is worse than none.
  */
 export function fetchRowsFor(card: { name: string; number: string | null; setName: string | null }): FetchRows | null {
   const l = load();
@@ -87,9 +90,10 @@ export function fetchRowsFor(card: { name: string; number: string | null; setNam
   const hits = l.index.get(numKey(card.number));
   if (!hits) return null;
   const named = hits.filter((h) => norm(h.s) === norm(card.setName!));
-  if (!named.length || named.some((h) => norm(h.n) !== norm(card.name))) return null;
+  const who = characterOf(card.name);
+  if (!named.length || named.some((h) => characterOf(h.n) !== who)) return null;
   const rows: FetchRow[] = [];
-  for (const finish of ["Normal", "Cold Foil"]) {
+  for (const finish of ["Normal", "Foil"]) {
     const h = named.filter((x) => x.f === finish).sort((a, b) => a.p - b.p)[0];
     if (h && h.p > 0) rows.push({ finish, condition: h.c, priceCents: h.p, url: h.u });
   }
