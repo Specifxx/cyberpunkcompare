@@ -880,3 +880,15 @@ code is identical). Cyberpunk sets US 0.4, UK, AU and CA 0.2 each: 240 US slots 
 other market. A dry run on today's catalogue and state plans US 120 / UK 120 / AU 120 / CA 120 = 480 of 600 for the next
 two runs (on a 300-call day: US 120, then 60 each). The site cap, and the keyset shared with BandaiCompare (1,000) and
 MotorCompare (3,300), are unchanged. Canada uses `EBAY_CA`: Canadian sellers, CAD, stated postage.
+
+## 2026-11-11: Fetch TCG marketplace row on card pages, Australia only
+
+**Why.** Fetch TCG (an Australian marketplace) sent a partner feed (Bill, 2026-11-11). Its terms: show its prices with a
+link back; never resell or pass the feed on; never use it to train or build a pricing model.
+
+**What.** `scripts/fetch-fetchtcg.ts` runs in the build (after the other fetch steps, failure ignored) and writes this game's
+slim rows to the git-ignored `data/fetch-live/au.json`; the feed is never committed (`data/` is public). `src/lib/fetchtcg.ts`
+matches a card only on set, collector number and character name, exactly one set hit or nothing. The Australian card page
+shows a labelled "Fetch TCG · Marketplace" row (violet outline) after eBay and Amazon, with Fetch's own link as sent. It is
+never a store, never "cheapest", a deal, an alert, history or JSON-LD. `FETCH_TCG_API_KEY` is a GitHub secret and Vercel
+Production variable only. The ops monitor warns (never fails) if the row is missing.
