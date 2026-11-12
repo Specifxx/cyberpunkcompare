@@ -892,3 +892,19 @@ matches a card only on set, collector number and character name, exactly one set
 shows a labelled "Fetch TCG · Marketplace" row (violet outline) after eBay and Amazon, with Fetch's own link as sent. It is
 never a store, never "cheapest", a deal, an alert, history or JSON-LD. `FETCH_TCG_API_KEY` is a GitHub secret and Vercel
 Production variable only. The ops monitor warns (never fails) if the row is missing.
+
+## 2026-11-12: the front page features the pricier items (owner)
+
+**Ask.** Bill: promote the more expensive items, so a sale earns more commission; the cheap ones should not be advertised on the
+front page. For the TCG sites that means sealed: booster boxes and the like.
+
+**What.** `SITE.featureMinCents` = 4000 ($40). The home page's sealed shelf (`featuredSealed`), today's top deals (`deals()`: the
+reference price must clear it, not just 500), the pre-order boxes in the shelf's tabs carry only products at or
+above it (TCGplayer market; `worthFeaturing` in `lib/data.ts`). Cheaper products keep their page, their set and hub listings, search,
+alerts and the sitemap; only the front page's selection changed, so URLs, titles, metadata and JSON-LD structure are as before.
+Starter Deck Display joins the shelf's fill types. A pre-order with no TCGplayer price yet is still shown. Store rows within a
+product are still sorted by price, never by commission; the reference price is TCGplayer's market and eBay is never a deal.
+
+
+**Why this floor.** From the day's data (TCGplayer market, sealed): booster boxes $104 and $311; starter decks about $27; packs $7 to $13. The floor keeps the real
+earners and drops packs and the cheapest decks. Revisit with the click-to-sale numbers (which placements earn) in the Monday report.
