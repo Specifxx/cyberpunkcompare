@@ -88,13 +88,15 @@ async function main() {
     // A warning at most: the page works without the row, and the row needs a release after FETCH_TCG_API_KEY is set.
     check("Fetch TCG row", async () => {
       if (!live) return { status: "warn", detail: "SITE_URL repository variable not set — live checks skipped" };
-      const cat = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/public/catalog.json"), "utf8")) as { products: { slug: string; kind: string; rarity: string | null }[] };
-      const slugs = cat.products.filter((x) => x.kind === "card" && x.rarity === "Common").slice(0, 4).map((x) => x.slug);
+      const cat = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/public/catalog.json"), "utf8")) as { sets: { id: number; name: string }[]; products: { slug: string; kind: string; setId: number }[] };
+      // Fetch lists the main set (Welcome to Night City) and the promos, not the starter decks: read pages from there (measured 2026-11-12: 350 of 504 cards match).
+      const mainSets = new Set(cat.sets.filter((x) => /^Welcome to Night City/.test(x.name)).map((x) => x.id));
+      const slugs = cat.products.filter((x) => x.kind === "card" && mainSets.has(x.setId)).slice(0, 6).map((x) => x.slug);
       for (const slug of slugs) {
         const r = await fetch(`${site}/card/${slug}`, { signal: AbortSignal.timeout(20000) });
         if (r.ok && (await r.text()).includes("www.fetchtcg.com/cards")) return { status: "ok", detail: `the Fetch TCG row is on /card/${slug}` };
       }
-      return { status: "warn", detail: `none of ${slugs.length} common cards shows a Fetch TCG row: FETCH_TCG_API_KEY missing in Vercel, the feed not read at the last build, or no stock at Fetch` };
+      return { status: "warn", detail: `none of ${slugs.length} Welcome to Night City cards shows a Fetch TCG row: FETCH_TCG_API_KEY missing in Vercel, the feed not read at the last build, or no stock at Fetch` };
     }),
     // The model-kit import (SITE.kits, scripts/import-kits.ts): its own file,
     // its own stores.
