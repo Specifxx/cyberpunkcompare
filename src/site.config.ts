@@ -110,6 +110,7 @@ export const SITE: SiteConfig = {
   ],
   // Every rarity TCGplayer used on 2026-11-01, rarest first.
   rarityOrder: ["Iconic Secret", "Iconic Legend", "Iconic", "Secret", "Nova Rare", "Epic", "Rare", "Uncommon", "Common"],
+  featureMinCents: 4000,
   chaseRarities: ["Iconic Secret", "Iconic Legend", "Iconic", "Secret"],
   cardHubs: [
     { facet: "color", attr: "Color", noun: ["colour", "colours"], titleCase: true, title: "{v} {game} cards", blurb: "Every Cyberpunk TCG card is one of five colours, each a way of playing Night City." },
