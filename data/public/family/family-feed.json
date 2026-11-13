@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-12T07:17:12.664Z",
+ "generatedAt": "2026-11-13T06:51:53.489Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -13,15 +13,15 @@
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Wakako Okada - Peace and Harmony (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/wakako-okada-peace-and-harmony-ilegend-welcome-to-night-city-beta",
-   "cents": 5756,
+   "title": "Royce - Psycho on the Edge (ILegend)",
+   "url": "https://cyberpunkcompare.com/card/royce-psycho-on-the-edge-ilegend-welcome-to-night-city-beta",
+   "cents": 4970,
    "currency": "USD",
    "store": "PunkOuter Games",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714320_200w.jpg",
-   "refCents": 6257,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714305_200w.jpg",
+   "refCents": 5665,
    "refLabel": "TCGplayer market price",
-   "savingPct": 8
+   "savingPct": 12
   },
   {
    "kind": "deal",
@@ -29,27 +29,27 @@
    "region": "US",
    "title": "Dexter DeShawn - Off the Grid (ILegend)",
    "url": "https://cyberpunkcompare.com/card/dexter-deshawn-off-the-grid-ilegend-welcome-to-night-city-beta",
-   "cents": 5855,
+   "cents": 5562,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714304_200w.jpg",
-   "refCents": 6364,
+   "refCents": 6294,
    "refLabel": "TCGplayer market price",
-   "savingPct": 8
+   "savingPct": 12
   },
   {
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "V - Streetkid (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/v-streetkid-ilegend-welcome-to-night-city-beta",
-   "cents": 10275,
+   "title": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
+   "url": "https://cyberpunkcompare.com/card/hanako-arasaka-daughter-of-the-emperor-ilegend-welcome-to-night-city-beta",
+   "cents": 19201,
    "currency": "USD",
    "store": "PunkOuter Games",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714306_200w.jpg",
-   "refCents": 11169,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714313_200w.jpg",
+   "refCents": 21821,
    "refLabel": "TCGplayer market price",
-   "savingPct": 8
+   "savingPct": 12
   },
   {
    "kind": "deal",
@@ -61,7 +61,7 @@
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714316_200w.jpg",
-   "refCents": 11564,
+   "refCents": 11531,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
