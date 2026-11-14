@@ -200,6 +200,21 @@ footer::before {
 :root[data-theme="light"] main h1 { text-shadow: 2px 0 0 rgb(255 42 109 / 0.35), -2px 0 0 rgb(0 229 255 / 0.45); }
 :root[data-theme="light"] .hero-band { background: #fffdf0; }
 :root[data-theme="light"] header.sticky { background: rgb(10 10 10 / 0.95); }
+/* The header stays a black bar in the light theme, so everything in it keeps the dark theme's colours (2026-11-14): the
+   wordmark, the menu links, the theme switch and the search field read 1.0:1 there before. */
+:root[data-theme="light"] header.sticky {
+  --c-fg: 236 238 245;
+  --c-muted: 150 158 182;
+  --c-ink-950: 5 5 7;
+  --c-ink-900: 13 13 18;
+  --c-ink-850: 20 20 27;
+  --c-ink-800: 28 28 38;
+  --c-ink-700: 45 45 59;
+  --c-ink-600: 71 71 89;
+  --c-brand-light: 255 244 92;
+  color: rgb(var(--c-fg));
+}
+:root[data-theme="light"] header.sticky .wordmark { color: var(--cp-yellow); background: none; }
 :root[data-theme="light"] header.sticky nav a { color: #f5f5f5; }
 :root[data-theme="light"] .btn-ghost { color: #006b78; border-color: #006b78; }
 :root[data-theme="light"] .card-surface { background: #fff; border-color: rgb(0 0 0 / 0.15); }
