@@ -1,0 +1,48 @@
+{
+ "v": 1,
+ "site": "cyberpunkcompare.com",
+ "at": "2026-11-14T11:12:38.232Z",
+ "overall": "warn",
+ "checks": [
+  {
+   "name": "Live site",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "name": "A card page",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "name": "Daily price import",
+   "status": "ok",
+   "detail": "4.7h old"
+  },
+  {
+   "name": "Store imports",
+   "status": "warn",
+   "detail": "irresistibleforce: 0 matched; vaultcollectables: 0 matched; lamoodcomics: 0 matched; cardcollector: 0 matched; goosegames: 0 matched; loufoque: 0 matched; lagildastore: 0 matched; 1collectiblestcg: 0 matched; grimdice: 0 matched; boardgamesdallas: 0 matched; gglehi: 0 matched; gamersguildaz: 0 matched; evvgamingguild: 0 matched; kryptonitekollectibles: 0 matched; lspbstore: 0 matched; magessanctum: 0 matched; stateofcomics: 0 matched; wolcowgaming: 0 matched; 4gsgames: 0 matched; deckeadittos: https://deckeadittos.com/collections/cyberpunk/products.json?limit=250&page=1&country=ES: fetch failed"
+  },
+  {
+   "name": "eBay budget",
+   "status": "ok",
+   "detail": "476/600 calls on 2026-11-14, 119 eligible"
+  },
+  {
+   "name": "Family feed",
+   "status": "ok",
+   "detail": "6 items, 4.7h old; 9 sister feeds (rift, op, dex, mtg, wax, gundam, lorcana, ygo, bandai)"
+  },
+  {
+   "name": "Amazon ASIN finder",
+   "status": "ok",
+   "detail": "AU: refused, 0 ASINs, 5h ago; CA: ok, 0 ASINs, 5h ago; EU: ok, 0 ASINs, 5h ago; UK: ok, 0 ASINs, 5h ago; US: ok, 4 ASINs, 5h ago"
+  },
+  {
+   "name": "Fetch TCG row",
+   "status": "ok",
+   "detail": "the Fetch TCG row is on /card/dont-fear-the-reaper"
+  }
+ ]
+}
