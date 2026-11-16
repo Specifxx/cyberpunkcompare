@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-15T06:39:04.492Z",
+ "generatedAt": "2026-11-16T06:35:59.239Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,7 +19,7 @@
    "currency": "USD",
    "store": "Hobby Addicts",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 12389,
+   "refCents": 12380,
    "refLabel": "TCGplayer market price",
    "savingPct": 19
   },
@@ -29,13 +29,13 @@
    "region": "US",
    "title": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
    "url": "https://cyberpunkcompare.com/card/hanako-arasaka-daughter-of-the-emperor-ilegend-welcome-to-night-city-beta",
-   "cents": 18737,
+   "cents": 18492,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714313_200w.jpg",
-   "refCents": 21309,
+   "refCents": 21157,
    "refLabel": "TCGplayer market price",
-   "savingPct": 12
+   "savingPct": 13
   },
   {
    "kind": "deal",
@@ -71,11 +71,11 @@
    "region": "US",
    "title": "River Ward - Detective on the Hunt (ILegend)",
    "url": "https://cyberpunkcompare.com/card/river-ward-detective-on-the-hunt-ilegend-welcome-to-night-city-beta",
-   "cents": 11449,
+   "cents": 11437,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714310_200w.jpg",
-   "refCents": 12445,
+   "refCents": 12431,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
@@ -85,11 +85,11 @@
    "region": "US",
    "title": "Sasha Yakovleva - Won't Let You Down (ISecret)",
    "url": "https://cyberpunkcompare.com/card/sasha-yakovleva-wont-let-you-down-isecret",
-   "cents": 58798,
+   "cents": 54983,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/729850_200w.jpg",
-   "refCents": 63911,
+   "refCents": 59764,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   }
