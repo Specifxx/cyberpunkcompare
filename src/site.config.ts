@@ -34,6 +34,8 @@ export const SITE: SiteConfig = {
   ownerEmail: "bill.jyang101@gmail.com",
 
   priceAlerts: true,
+  // Impact (account 7385758) ownership token for cyberpunkcompare.com's own property, 2026-11-17.
+  impactSiteVerification: "5a2cee06-a85e-4589-b82b-9e66b1d73992",
   amazonAuTag: "cyberpunkcompare-22",
   tcgcsvCategoryId: 92,
   tcgplayerSlug: "cyberpunk-tcg",
