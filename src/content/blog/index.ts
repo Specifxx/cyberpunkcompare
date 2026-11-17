@@ -9,5 +9,6 @@ import { post as blackFriday } from "./black-friday";
 import { post as cardList } from "./card-list";
 import { post as legends } from "./legends";
 import { post as packs } from "./packs-in-a-box";
+import { post as starterDecks } from "./starter-decks";
 
-export const POSTS: Post[] = [packs, cardList, legends, blackFriday, retailLaunch, mostExpensive, betaMarket, betaVsRetail, releaseDate, rarities];
+export const POSTS: Post[] = [starterDecks, packs, cardList, legends, blackFriday, retailLaunch, mostExpensive, betaMarket, betaVsRetail, releaseDate, rarities];
