@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-16T06:35:59.239Z",
+ "generatedAt": "2026-11-17T08:00:09.268Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,9 +19,9 @@
    "currency": "USD",
    "store": "Hobby Addicts",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 12380,
+   "refCents": 11938,
    "refLabel": "TCGplayer market price",
-   "savingPct": 19
+   "savingPct": 16
   },
   {
    "kind": "deal",
@@ -29,13 +29,13 @@
    "region": "US",
    "title": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
    "url": "https://cyberpunkcompare.com/card/hanako-arasaka-daughter-of-the-emperor-ilegend-welcome-to-night-city-beta",
-   "cents": 18492,
+   "cents": 18345,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714313_200w.jpg",
-   "refCents": 21157,
+   "refCents": 20825,
    "refLabel": "TCGplayer market price",
-   "savingPct": 13
+   "savingPct": 12
   },
   {
    "kind": "deal",
@@ -43,11 +43,11 @@
    "region": "US",
    "title": "V - Streetkid (ILegend)",
    "url": "https://cyberpunkcompare.com/card/v-streetkid-ilegend-welcome-to-night-city-beta",
-   "cents": 9847,
+   "cents": 9621,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714306_200w.jpg",
-   "refCents": 10703,
+   "refCents": 10458,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
@@ -57,11 +57,11 @@
    "region": "US",
    "title": "Panam Palmer - Nomad Cavalry (ILegend)",
    "url": "https://cyberpunkcompare.com/card/panam-palmer-nomad-cavalry-ilegend-welcome-to-night-city-beta",
-   "cents": 10531,
+   "cents": 10517,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714316_200w.jpg",
-   "refCents": 11447,
+   "refCents": 11432,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
@@ -71,11 +71,11 @@
    "region": "US",
    "title": "River Ward - Detective on the Hunt (ILegend)",
    "url": "https://cyberpunkcompare.com/card/river-ward-detective-on-the-hunt-ilegend-welcome-to-night-city-beta",
-   "cents": 11437,
+   "cents": 11403,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714310_200w.jpg",
-   "refCents": 12431,
+   "refCents": 12395,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
