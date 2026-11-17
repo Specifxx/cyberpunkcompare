@@ -1115,3 +1115,7 @@ HTML with scripts off, the commit before the pass against this branch, on 17 URL
 h1 and h2 texts, internal links and indexed words, and the same sponsored links in the same order with the same words and
 hrefs. So the 19 November clicks-per-placement recheck is unaffected. No `revalidate` change, no new font, library or
 database read.
+
+## 2026-11-17: booster packs on the home shelf
+
+Owner: the front page "feels like it's just the booster boxes". The home shelf gains a "Booster packs" tab (`heroPacks()` in `lib/sealed-hero.ts`): the newest released sets first, at most two packs a set, up to eight, each at its own cheapest-store price. A pack no store sells is left out and no box price is divided into a pack price. Homepage only; sealed pages, URLs and metadata are unchanged.
