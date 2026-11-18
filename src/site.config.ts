@@ -79,6 +79,10 @@ export const SITE: SiteConfig = {
     { word: "retail", default: true },
   ],
   rarityMustAgree: true,
+  // The promo sets reuse the main set's names and numbers ("Adam Smasher - Ender of Legends" 001 is both the
+  // Pre-Release Retail promo and, as "(Epic)", the main set's card): a title naming Welcome to Night City is never
+  // a promo's (2026-11-19).
+  setNameMustAgree: true,
   rarityNames: {
     C: "Common",
     UC: "Uncommon",

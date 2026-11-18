@@ -1475,3 +1475,15 @@ which the CDN already keeps for six hours, so the change adds no function call. 
 `rel="sponsored nofollow noopener"` through /go under `quickview-mini-ebay` / `quickview-mini-tcg`, and it is never Amazon,
 never a price row and never "the cheapest". The page's one inline block stays out of the quick view
 (`tests/inline-ads.test.ts`). Clicks are read by the buy_click placement on 2 Dec beside the other ad tests.
+
+## 2026-11-19: A store title naming another set never matches a promo's card (`setNameMustAgree`)
+
+Site loop, Job B (wrong prices). Mint Collectables (A$3.50) and Wonderland Games (A$4.00) list the main set's Epic as
+"Adam Smasher - Ender of Legends - 001 - Welcome to Night City Retail Foil". The main set's card is named "... (Epic)", so
+the variant-marker rule refused it, and the only product left with that name and number was the Pre-Release Retail promo
+(TCGplayer market US$8.81): both listings sat on the promo's page as its cheapest price. The promo sets (Pre-Release,
+Box Toppers, Set 1 Promos, Brawl, Judge) reuse the main set's names and numbers, so a title is now refused for a card when
+it names another catalogue set (set names compared run together, without stop and edition words, so "Prerelease" names
+"Pre-Release Retail") and does not name the card's own. Refuses only. Replayed over every stored store listing: 3,012
+matches unchanged, exactly these two dropped. An engine option (`SITE.setNameMustAgree`, off by default; Lorcana Compare
+leaves it off), `tests/set-editions.test.ts`.
