@@ -36,7 +36,7 @@ export const SITE: SiteConfig = {
   priceAlerts: true,
   // The phone bottom nav (components/BottomNav.tsx, DECISIONS.md 2026-11-18): "optin" = only a visitor who opens any page with ?bn=1
   // sees it; "on" = everyone on a phone; "off" is the rollback (it ignores ?bn=1 too).
-  bottomNav: "optin",
+  bottomNav: "on",
   // Impact (account 7385758) ownership token for cyberpunkcompare.com's own property, 2026-11-17.
   impactSiteVerification: "5a2cee06-a85e-4589-b82b-9e66b1d73992",
   amazonAuTag: "cyberpunkcompare-22",
