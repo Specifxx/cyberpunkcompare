@@ -14,6 +14,8 @@ import { ShareButton } from "./ShareButton";
 import { closeQuickViewUrl, onQuickViewHistory, openQuickViewUrl } from "@/lib/quick-view-url";
 
 import type { FetchRows } from "@/lib/fetchtcg";
+import type { CardAds } from "@/lib/card-ads";
+import { QuickAds } from "./QuickAds";
 interface Head {
   slug: string;
   name: string;
@@ -29,6 +31,9 @@ interface Data {
   sub: string;
   img: string | null;
   fetchTcg?: FetchRows | null;
+  /** The ad pair's tiles; absent in a response the CDN kept from before. */
+  ads?: CardAds;
+  adSearch?: { ebayQuery: string; tcgplayerUrl: string };
 }
 
 // Every link to a card or sealed page opens it (owner, 2026-10-31: "whenever I
@@ -170,7 +175,8 @@ export function QuickView() {
           ) : data ? (
             <>
               <PriceTable offers={data.offers} fx={data.fx} productId={data.id} page="quickview" amazon={data.amazon} tableId={null} fetchTcg={data.fetchTcg ?? null} image={data.img} cartTitle={data.name} />
-              {/* The small eBay + TCGplayer pair, as on the card page (owner, 2026-11-03). Never Amazon here. */}
+              {/* The eBay + TCGplayer ad pair (owner, 2026-11-18: "ads can show in the quick view"). Never Amazon here. */}
+              {data.ads && data.adSearch && <div className="mt-4"><QuickAds ads={data.ads} adSearch={data.adSearch} /></div>}
             </>
           ) : (
             <p className="rounded-xl border border-ink-700/60 p-4 text-sm text-muted">Prices did not load. The full page has every price.</p>
