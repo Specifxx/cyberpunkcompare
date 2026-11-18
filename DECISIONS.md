@@ -1444,3 +1444,22 @@ sitting on top of it.
 `matchCard` reads titles that end with the set's name and its set number ("Ursula - Deal Maker - Wilds Unknown (12) NM") as the exact
 full name inside that set, only when the code and the name agree on the set, only NM, only one product. Anything else falls through to
 the old rules. Engine sync from Lorcana Compare (its DECISIONS.md, same date); a Beta set name is not read by it, so nothing changes here today.
+
+## 2026-11-19: Core-update quality pass: stricter card indexing, fewer links, ads below content, no leave pop-up, who runs the site
+
+Google's November 2026 core update took sister sites on this engine's old shape (YGO, Gundam) to near-zero impressions,
+and this site slid from ~287 a day to ~28. URL Inspection showed formerly ranking pages "Crawled - currently not
+indexed" with no technical fault: a quality verdict. On Cyberpunk Compare 532 card pages asked to be indexed for 13 impressions in 56 days.
+
+- **Indexing** (`lib/indexing.ts` `cardAsksIndex`, card page and sitemap): a single asks to be indexed when its set is
+  upcoming, when Search Console shows people finding it (`lib/search-demand.ts`, a click or 10+ impressions in 56 days,
+  copied daily from the `demand` branch to `data/public/search-demand.json` by `refresh-prices.yml`), or when it is worth
+  US$5+ on TCGplayer and a store sells it. Sealed keeps the zero-data rule. Cyberpunk: 532 → about 148 pages. The rest stay live, linked, noindex, follow.
+- **Fewer links**: menus and the sidebar show 2 card dimensions with 6 links each (was 4 × 8 and every dimension × 10), 6
+  sets, 6 sealed types, three tools and the tools page; no forum, creators or feedback link. The footer drops seasonal sale
+  pages, tools, widgets, forum, creators, feedback, rate-us and list-your-store (~33 → 13). Cross-site cluster tiles off.
+- **Ads below content**: the one ad block sits after each page's own content (after the price table, the grid, the FAQ),
+  never under the hero or the breadcrumbs. The exit "leave nudge" pop-up is off (`LEAVE_NUDGE_ON = false`).
+- **Who runs it**: the about page draws its own words from `src/content/about.ts` (each site writes its own, not engine):
+  the co-founders (Bill and George), how AI tools are used, and the running cost (about A$790 a month for the group, our
+  books to 15 Nov 2026). It no longer links to the sister sites from the body.
