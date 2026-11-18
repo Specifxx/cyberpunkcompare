@@ -194,7 +194,6 @@ export const STORES: StoreConfig[] = [
   { key: "cardclub", name: "Card Club", base: "https://cardclub.de", market: "EU", collections: ["cyberpunk"], kind: "both" },
   { key: "ccncards", name: "CCN Cards", base: "https://ccncards.de", market: "EU", collections: ["cyberpunk-tcg"], kind: "sealed" },
   { key: "dadiemattoncini", name: "Dadi e Mattoncini", base: "https://dadiemattoncini.it", market: "EU", collections: ["tcg-cyberpunk"], kind: "sealed" },
-  { key: "deckeadittos", name: "Deckeadittos", base: "https://deckeadittos.com", market: "EU", collections: ["cyberpunk"], kind: "sealed" },
   { key: "dutchtcgcompany", name: "DutchTCGCompany", base: "https://dutchtcgcompany.com", market: "EU", collections: ["cyberpunk-tcg"], kind: "sealed" },
   { key: "engelfuss", name: "EngelFuẞ Verlag & Atelier", base: "https://engelfuss.com", market: "EU", collections: ["cyberpunk-tcg"], kind: "both" },
   { key: "exchangeplayinvest", name: "E.P.I.", base: "https://exchangeplayinvest.com", market: "EU", collections: ["cyberpunk-tcg"], kind: "sealed" },
