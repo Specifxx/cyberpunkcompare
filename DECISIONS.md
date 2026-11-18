@@ -1438,3 +1438,9 @@ sitting on top of it.
   `var(--bn-space)` + a small gap up, and the body's bottom padding follows it. Hidden, it slides fully off-screen (transform only, CLS 0).
 - **Measured** (local build, dock stacked): Pixel 7 412×915 nav + dock take 129px (14.1%); iPhone 15 393×852 with a 34px safe area
   143px (16.8%); iPhone SE 375×667 129px (19.3%); the old flush bar took about the same plus the full safe area.
+
+## 2026-11-18 — Engine: "Name - Set (12) NM" store titles (from Lorcana Compare)
+
+`matchCard` reads titles that end with the set's name and its set number ("Ursula - Deal Maker - Wilds Unknown (12) NM") as the exact
+full name inside that set, only when the code and the name agree on the set, only NM, only one product. Anything else falls through to
+the old rules. Engine sync from Lorcana Compare (its DECISIONS.md, same date); a Beta set name is not read by it, so nothing changes here today.
