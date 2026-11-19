@@ -10,6 +10,11 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "@/components/Link";
 import type { Market, Offer } from "@/lib/site-types";
 import { PriceTable } from "./PriceTable";
+import dynamic from "next/dynamic";
+import type { Series } from "@/lib/series";
+
+// Loaded only when a panel has history to draw: the chart's code is not in the page's first load.
+const PriceHistory = dynamic(() => import("./PriceHistory").then((m) => m.PriceHistory), { ssr: false });
 import { ShareButton } from "./ShareButton";
 import { closeQuickViewUrl, onQuickViewHistory, openQuickViewUrl } from "@/lib/quick-view-url";
 
@@ -26,6 +31,10 @@ interface Data {
   id: number;
   offers: Offer[];
   fx: Record<string, number>;
+  /** The price history chart's lines (absent in a response the CDN kept from before). */
+  history?: Series;
+  lows?: Record<string, Series>;
+  through?: number;
   amazon: Partial<Record<Market, string>> | null;
   name: string;
   sub: string;
@@ -174,12 +183,18 @@ export function QuickView() {
             <Skeleton />
           ) : data ? (
             <>
-              <PriceTable offers={data.offers} fx={data.fx} productId={data.id} page="quickview" amazon={data.amazon} tableId={null} fetchTcg={data.fetchTcg ?? null} image={data.img} cartTitle={data.name} />
+              <PriceTable offers={data.offers} fx={data.fx} productId={data.id} page="quickview" maxRows={10} amazon={data.amazon} tableId={null} fetchTcg={data.fetchTcg ?? null} image={data.img} cartTitle={data.name} />
               {/* The eBay + TCGplayer ad pair (owner, 2026-11-18: "ads can show in the quick view"). Never Amazon here. */}
               {data.ads && data.adSearch && <div className="mt-4"><QuickAds ads={data.ads} adSearch={data.adSearch} /></div>}
             </>
           ) : (
             <p className="rounded-xl border border-ink-700/60 p-4 text-sm text-muted">Prices did not load. The full page has every price.</p>
+          )}
+          {/* The price history under the rows (owner, 2026-11-19: OP Compare's two-line chart, in the quick view too). */}
+          {data && data !== "loading" && ((data.history?.length ?? 0) >= 2 || Object.keys(data.lows ?? {}).length > 0) && (
+            <div className="mt-4 rounded-xl border border-ink-700 p-3 [min-height:12rem]">
+              <PriceHistory tcg={data.history} lows={data.lows} fx={data.fx} through={data.through ?? Math.floor(Date.now() / 86_400_000)} days={365} compact />
+            </div>
           )}
         </div>
         <div className="border-t border-ink-800 p-4 sm:px-5">
