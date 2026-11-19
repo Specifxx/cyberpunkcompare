@@ -1487,3 +1487,13 @@ it names another catalogue set (set names compared run together, without stop an
 "Pre-Release Retail") and does not name the card's own. Refuses only. Replayed over every stored store listing: 3,012
 matches unchanged, exactly these two dropped. An engine option (`SITE.setNameMustAgree`, off by default; Lorcana Compare
 leaves it off), `tests/set-editions.test.ts`.
+
+## 2026-11-19 — A calmer home page on a phone
+
+Owner, 2026-11-19: "way too much going on in the mobile version of the home page" (KaeYoung first; the same pass on every
+site). Below sm the hero is the headline, the words and the link to every card; the creators bubble, the market row,
+trending chips and the counts line show from sm up (the header already carries the search and the market). The kits and
+chase-card shelves are ONE sideways row each on a phone (`shelf-phone`, the sealed page's rule), and the guide cards
+show from sm up. Measured on a 390px phone: 7,422 px tall before, 4,344 after. Layout only: URLs, titles, the h1 and the h2 outline, metadata
+and JSON-LD are the same, the server HTML is the same at every width, and the desktop page is unchanged. Before adding a
+block to the phone home page, say what it replaces.
