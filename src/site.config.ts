@@ -34,6 +34,8 @@ export const SITE: SiteConfig = {
   ownerEmail: "bill.jyang101@gmail.com",
 
   priceAlerts: true,
+  // This site's own invite to the Discord hub (lands in #general; owner, 2026-11-20: grow the Discord). Shown on the Hot 100 strip.
+  discordInvite: "https://discord.gg/Rj4zzzay2V",
   // The phone bottom nav (components/BottomNav.tsx, DECISIONS.md 2026-11-18): "optin" = only a visitor who opens any page with ?bn=1
   // sees it; "on" = everyone on a phone; "off" is the rollback (it ignores ?bn=1 too).
   bottomNav: "on",
