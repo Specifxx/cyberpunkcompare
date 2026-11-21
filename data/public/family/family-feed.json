@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-20T07:21:29.264Z",
+ "generatedAt": "2026-11-21T07:14:28.294Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,9 +19,9 @@
    "currency": "USD",
    "store": "Hobby Addicts",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 11900,
+   "refCents": 11810,
    "refLabel": "TCGplayer market price",
-   "savingPct": 16
+   "savingPct": 15
   },
   {
    "kind": "deal",
@@ -29,11 +29,11 @@
    "region": "US",
    "title": "Dexter DeShawn - Off the Grid (ILegend)",
    "url": "https://cyberpunkcompare.com/card/dexter-deshawn-off-the-grid-ilegend",
-   "cents": 3768,
+   "cents": 3722,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/729823_200w.jpg",
-   "refCents": 4097,
+   "refCents": 4046,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
@@ -43,25 +43,11 @@
    "region": "US",
    "title": "Royce - Psycho on the Edge (ILegend)",
    "url": "https://cyberpunkcompare.com/card/royce-psycho-on-the-edge-ilegend-welcome-to-night-city-beta",
-   "cents": 5149,
+   "cents": 5138,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714305_200w.jpg",
-   "refCents": 5597,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 8
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Adam Smasher - Ender of Legends (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/adam-smasher-ender-of-legends-ilegend",
-   "cents": 8560,
-   "currency": "USD",
-   "store": "PunkOuter Games",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/729822_200w.jpg",
-   "refCents": 9304,
+   "refCents": 5585,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   },
@@ -71,11 +57,11 @@
    "region": "US",
    "title": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
    "url": "https://cyberpunkcompare.com/card/hanako-arasaka-daughter-of-the-emperor-ilegend-welcome-to-night-city-beta",
-   "cents": 18290,
+   "cents": 18121,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714313_200w.jpg",
-   "refCents": 19880,
+   "refCents": 19697,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   }
