@@ -1741,3 +1741,9 @@ fetched once when the browser is idle (skipped on Save-Data and 2g); and a tap d
 in. The viewport prefetch `components/Link.tsx` turns off for cost stays off (`tests/nav-boost.test.ts`). Never `/go`, `/out`,
 `/api`, a sponsored link, a new-tab link or another host. Measured on TCG Prices (emulated phone, tap to first paint): a warmed
 tab 871 to 567 ms. Rollback: remove `<NavBoost>` from the layout.
+
+## 2026-11-24: Set pages take Rift Compare's set read-out (engine, from Lorcana Compare)
+
+Engine change from Lorcana Compare (its DECISIONS.md, same date): under a set page's full card list, "About <set> prices"
+and "How to read <set> prices", written from the set's own rows by `lib/set-readout.ts`; the second sealed tile grid moves
+under them; a CollectionPage JSON-LD joins the ItemList. URLs, titles, canonicals and the H1 are unchanged.
