@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-22T06:54:29.642Z",
+ "generatedAt": "2026-11-23T07:45:02.965Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,7 +19,7 @@
    "currency": "USD",
    "store": "Wayward City Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714346_200w.jpg",
-   "refCents": 29930,
+   "refCents": 30070,
    "refLabel": "TCGplayer market price",
    "savingPct": 33
   },
@@ -33,7 +33,7 @@
    "currency": "USD",
    "store": "Hobby Addicts",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 11601,
+   "refCents": 11606,
    "refLabel": "TCGplayer market price",
    "savingPct": 14
   },
@@ -43,11 +43,11 @@
    "region": "US",
    "title": "Royce - Psycho on the Edge (ILegend)",
    "url": "https://cyberpunkcompare.com/card/royce-psycho-on-the-edge-ilegend-welcome-to-night-city-beta",
-   "cents": 4882,
+   "cents": 4866,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714305_200w.jpg",
-   "refCents": 5585,
+   "refCents": 5567,
    "refLabel": "TCGplayer market price",
    "savingPct": 13
   },
@@ -57,11 +57,11 @@
    "region": "US",
    "title": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
    "url": "https://cyberpunkcompare.com/card/hanako-arasaka-daughter-of-the-emperor-ilegend-welcome-to-night-city-beta",
-   "cents": 17216,
+   "cents": 17096,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714313_200w.jpg",
-   "refCents": 19697,
+   "refCents": 19561,
    "refLabel": "TCGplayer market price",
    "savingPct": 13
   },
@@ -85,11 +85,11 @@
    "region": "US",
    "title": "Adam Smasher - Ender of Legends (ILegend)",
    "url": "https://cyberpunkcompare.com/card/adam-smasher-ender-of-legends-ilegend",
-   "cents": 8398,
+   "cents": 8356,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/729822_200w.jpg",
-   "refCents": 9128,
+   "refCents": 9083,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   }
