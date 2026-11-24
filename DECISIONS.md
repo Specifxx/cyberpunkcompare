@@ -1747,3 +1747,22 @@ tab 871 to 567 ms. Rollback: remove `<NavBoost>` from the layout.
 Engine change from Lorcana Compare (its DECISIONS.md, same date): under a set page's full card list, "About <set> prices"
 and "How to read <set> prices", written from the set's own rows by `lib/set-readout.ts`; the second sealed tile grid moves
 under them; a CollectionPage JSON-LD joins the ItemList. URLs, titles, canonicals and the H1 are unchanged.
+
+
+## Black Friday page: one deal list, deals above the fold (owner's review, 2026-11-24)
+
+The owner reviewed DexCompare's Black Friday page and asked for the changes "urgently" on every site: deals above the fold with a
+one-line intro, one list with a toggle, a discount badge on every row, filters and sort, sticky section chips, per-row freshness,
+delivered price, a sparkline, one affiliate disclosure, aligned rows, the store button primary and eBay a text link, bigger
+thumbnails, one slim alerts bar, phone rows with 44px targets, and click and scroll tracking per section. Engine change, made in
+Lorcana Compare and Cyberpunk Compare together (YGO Compare and TCG Prices carry the same list in their own copies).
+
+- The page's lists (US "under TCGplayer", each country's "under other stores") are ONE list (`lib/sale-deals.ts`,
+  `lib/sale-deals-data.ts`, `components/SaleDeals.tsx`). Each row is the cheapest in-stock store price for a product in one country,
+  and both savings are measured against that price; the toggle ("Under TCGplayer" / "Under other stores today") picks the basis,
+  a country select picks the market (the visitor's own once the page loads; the server HTML is the US). The struck price is that
+  basis's reference, labelled for screen readers, never "was". The strongest 48 rows per country and basis ship to the browser.
+- A row whose store was read more than 12 hours ago says so (the store's `meta.stores[...].at`). Delivered price only where the
+  store's shipping was read. The sparkline is the country's cheapest in-stock store price per day (`data/store-lows`), 30 days.
+- Clicks go through `/go` with `from=<page>_list` (and `_list_ebay`); `bf_section` counts each section's first view, `bf_filter`
+  each filter used. The alerts bar after the fifth row: email (the weekly list), Discord, Telegram.
