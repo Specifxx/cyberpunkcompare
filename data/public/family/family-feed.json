@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-23T07:45:02.965Z",
+ "generatedAt": "2026-11-24T09:59:11.396Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,7 +19,7 @@
    "currency": "USD",
    "store": "Wayward City Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714346_200w.jpg",
-   "refCents": 30070,
+   "refCents": 30040,
    "refLabel": "TCGplayer market price",
    "savingPct": 33
   },
@@ -33,7 +33,7 @@
    "currency": "USD",
    "store": "Hobby Addicts",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 11606,
+   "refCents": 11669,
    "refLabel": "TCGplayer market price",
    "savingPct": 14
   },
@@ -43,11 +43,11 @@
    "region": "US",
    "title": "Royce - Psycho on the Edge (ILegend)",
    "url": "https://cyberpunkcompare.com/card/royce-psycho-on-the-edge-ilegend-welcome-to-night-city-beta",
-   "cents": 4866,
+   "cents": 4864,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714305_200w.jpg",
-   "refCents": 5567,
+   "refCents": 5565,
    "refLabel": "TCGplayer market price",
    "savingPct": 13
   },
@@ -57,11 +57,11 @@
    "region": "US",
    "title": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
    "url": "https://cyberpunkcompare.com/card/hanako-arasaka-daughter-of-the-emperor-ilegend-welcome-to-night-city-beta",
-   "cents": 17096,
+   "cents": 16939,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714313_200w.jpg",
-   "refCents": 19561,
+   "refCents": 19381,
    "refLabel": "TCGplayer market price",
    "savingPct": 13
   },
@@ -69,27 +69,13 @@
    "kind": "deal",
    "cluster": "cards",
    "region": "US",
-   "title": "Dexter DeShawn - Off the Grid (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/dexter-deshawn-off-the-grid-ilegend",
-   "cents": 3722,
-   "currency": "USD",
-   "store": "PunkOuter Games",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/729823_200w.jpg",
-   "refCents": 4046,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 8
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
    "title": "Adam Smasher - Ender of Legends (ILegend)",
    "url": "https://cyberpunkcompare.com/card/adam-smasher-ender-of-legends-ilegend",
-   "cents": 8356,
+   "cents": 8244,
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/729822_200w.jpg",
-   "refCents": 9083,
+   "refCents": 8997,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   }
