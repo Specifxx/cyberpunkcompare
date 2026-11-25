@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-24T09:59:11.396Z",
+ "generatedAt": "2026-11-25T08:41:21.192Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,7 +19,7 @@
    "currency": "USD",
    "store": "Wayward City Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714346_200w.jpg",
-   "refCents": 30040,
+   "refCents": 29777,
    "refLabel": "TCGplayer market price",
    "savingPct": 33
   },
@@ -33,9 +33,23 @@
    "currency": "USD",
    "store": "Hobby Addicts",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 11669,
+   "refCents": 11848,
    "refLabel": "TCGplayer market price",
-   "savingPct": 14
+   "savingPct": 16
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
+   "url": "https://cyberpunkcompare.com/card/hanako-arasaka-daughter-of-the-emperor-ilegend-welcome-to-night-city-beta",
+   "cents": 16807,
+   "currency": "USD",
+   "store": "PunkOuter Games",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714313_200w.jpg",
+   "refCents": 19229,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 13
   },
   {
    "kind": "deal",
@@ -47,23 +61,9 @@
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714305_200w.jpg",
-   "refCents": 5565,
+   "refCents": 5533,
    "refLabel": "TCGplayer market price",
-   "savingPct": 13
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/hanako-arasaka-daughter-of-the-emperor-ilegend-welcome-to-night-city-beta",
-   "cents": 16939,
-   "currency": "USD",
-   "store": "PunkOuter Games",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714313_200w.jpg",
-   "refCents": 19381,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 13
+   "savingPct": 12
   },
   {
    "kind": "deal",
@@ -75,7 +75,7 @@
    "currency": "USD",
    "store": "PunkOuter Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/729822_200w.jpg",
-   "refCents": 8997,
+   "refCents": 8961,
    "refLabel": "TCGplayer market price",
    "savingPct": 8
   }
