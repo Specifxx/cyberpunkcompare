@@ -1830,3 +1830,21 @@ said the card was sold out. `basketUsable` (`lib/tools.ts`) keeps an offer in Be
 pre-order, and from a store whose last good read (`meta.stores[key].at`, which a failed read leaves at its last success) is under
 `BASKET_MAX_AGE_H` (48h). Card pages keep showing a store's carried rows as before; only the plan that tells someone to buy now
 drops them. eBay and TCGplayer rows come from their own passes and are not store reads. `tests/basket-usable.test.ts`.
+
+## 2026-11-25: Best Basket adds the cheapest split with shipping, its plan for Premium
+
+The owner (2026-11-25): Best Basket "on all the sites as premium". The free tool keeps everything it had: the cheapest price
+of each card and one-store orders before postage. On top of that, the answer now carries the cheapest way to buy the whole
+list WITH each store's shipping, split across stores only when that is cheaper (`lib/basket-split.ts`). It uses RiftCompare's
+solver unchanged (`lib/basket-optimize.ts`), the same port as DexCompare, MTG Compare, YGO Compare and TCG Prices.
+
+- **Shipping is borrowed, never guessed.** DexCompare and MTG Compare measure each Shopify shop's checkout every week, and a
+  shop's postage does not depend on the game. `scripts/borrow-shipping.ts` (in `refresh-prices.yml`, never fatal) copies those
+  measurements onto our stores in `data/shipping/borrowed.json`. A store is matched by host AND market, never by name. A store
+  nobody measured is left out of the split and counted, never priced at zero. The ops monitor's "Best Basket shipping" check
+  watches the file's age and coverage.
+- **Rows:** the free tool's own rule (`basketUsable`: in stock, not a pre-order, from a store read in the last 48 hours), in this
+  market only, and stores only, never TCGplayer, eBay or Amazon.
+- **Free vs Premium:** everyone sees the delivered total and the saving. `/api/basket` returns the store-by-store plan (`/go`
+  buy links, each store's shipping, the one-store order) only when RiftCompare's sister-premium status says the token is
+  Premium right now. It is withheld in the response, not hidden with CSS.
