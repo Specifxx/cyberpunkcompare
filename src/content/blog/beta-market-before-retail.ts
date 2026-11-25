@@ -9,12 +9,14 @@ export const post: Post = {
   description:
     "A Beta booster box is US$342 and a Retail box US$137. Four Iconic Secrets are over US$780 and the Retail Johnny Silverhand is US$24. Eight weeks of data on a first print run, and what other games say happens when the second one lands.",
   date: "2026-11-04",
+  updated: "2026-11-25",
   keywords: ["cyberpunk tcg beta prices", "cyberpunk tcg retail release", "welcome to night city beta booster box", "iconic secret cyberpunk tcg", "cyberpunk tcg market", "johnny silverhand iconic secret"],
   image: {
     src: "/blog/cyberpunk-tcg-beta-prices-before-retail-release.jpg",
     alt: "A bar chart comparing Cyberpunk TCG Beta and Retail prices at TCGplayer market: Beta booster box US$342 against Retail US$137, and the Beta Johnny Silverhand Iconic Secret US$1,169 against the Retail Secret US$24, on Cyberpunk Compare's yellow-on-black branding",
   },
   html: `
+<p><i>Written on 4 November 2026, two days before Retail released on 6 November; <a href="/blog/cyberpunk-tcg-retail-booster-box-price-launch-week">what the Retail box cost at launch</a> is the follow-up.</i></p>
 <p>The Cyberpunk Trading Card Game is about to have its second birth. <b>Welcome to Night City - Beta</b>, the 36-pack Kickstarter print run, reached backers and the first stores on 10 September 2026. <b>Welcome to Night City - Retail</b>, the open print run, is dated <b>6 November 2026</b>, with pre-release events already run. That makes this week the one time we can look at a complete first print run's prices before a second one arrives, and the pattern in those eight weeks says a lot about the next eight.</p>
 
 <p>Every live figure below reprices each morning. The dated figures are TCGplayer market prices from 4 November 2026, so the before-and-after stays honest once Retail lands.</p>
@@ -68,6 +70,6 @@ export const post: Post = {
     { q: "How much is a Cyberpunk TCG Beta booster box worth?", a: "US$342 at TCGplayer market on 4 November 2026, against US$137 for a Retail booster box of the same 36 packs on pre-order. The live price is on the box's page." },
     { q: "What is the most expensive Cyberpunk TCG card?", a: "Johnny Silverhand - Rocking Renegade (Iconic Secret) from the Beta printing, at US$1,169 on 4 November 2026, followed by the other three Beta Iconic Secrets: Sasha Yakovleva, Panam Palmer and Judy Alvarez." },
     { q: "Will Beta prices fall when the Retail set releases?", a: "On the evidence of other games with a limited first print, the first-run chase cards keep their premium because the open print does not reprint them, while first-run ordinary cards fall toward the open print's price. Sealed first-run boxes have held better than the singles inside them." },
-    { q: "When does Cyberpunk TCG Retail release?", a: "Welcome to Night City - Retail is dated 6 November 2026." },
+    { q: "When did Cyberpunk TCG Retail release?", a: "Welcome to Night City - Retail released on 6 November 2026. What stores charged that week is in our Retail booster box launch price post." },
   ],
 };
