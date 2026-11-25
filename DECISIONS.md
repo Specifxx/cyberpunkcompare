@@ -1915,3 +1915,30 @@ and the light theme's look colours at 4.5:1 or better on white.
 Engine change, the same files in Lorcana Compare (which sets `art: "orbit"`, gold and its six inks). `engine.json` lists
 two repos (this one and `lorcanacompare`); BandaiCompare left the engine on 2026-11-08 and was not touched. Before/after
 pictures: `redesign/2026-11-26-cyberpunk-lively/` in the project files.
+
+## 2026-11-26: the phone's home page, tidied (one path: the headline, the products, three deals)
+
+**Owner, 2026-11-26:** "we should still tidy up the landing page for our sites a little bit, because I think there's just too
+much going on, especially for mobile phone."
+
+**Measured at 390px before:** 4,350px tall. Above the first product: the sale strip, the Christmas gift pill, the headline, the
+bold line and five more lines of sub-text, the links, then the shelf's title, a two-line note and its link. The first product began
+at about 780px. Further down, "Today's top deals" repeated the strip ("Black Friday deals · Cyber Monday deals") and
+listed six deals in one column.
+
+**Now, below 640px only:** the headline and its one bold line, then the most popular row, the sealed shelf with its tabs, three deals and the button to the rest, the
+ad block (where it was, untouched), the questions. 3,699px, and the first products begin at about 550px, on the first
+screen. Hidden on a phone: the gift pill WHILE the sale strip shows (one promo a page; it comes back when the strip is closed
+or its season ends, by `:has([data-holiday-strip])`), the hero's sentence, each shelf's note (a link inside a note
+stays), the Black Friday line above the deals, the deals after the third. The gap between sections is a little smaller.
+
+**Unchanged:** the HTML is the same at every width, so a crawler, find-in-page and a desktop see every block; no URL, title,
+heading or JSON-LD changes; no ad moves (the ads thread owns placement); from 640px up the page is pixel for pixel what it was
+(checked at 640 and 1280). CSS only, in one block at the end of `globals.css` ("The phone's home page, tidied"); the hooks
+are `home-tidy` (the page), `home-more` (what a phone leaves out), `home-head` and `home-deals`. The page is not 25% shorter because the ad block, the questions and the footer (about 1,900px together) were not
+in scope. A shelf's title and its
+"all" button now share a line on a phone where they fit.
+
+Engine change, the same two files (`src/app/page.tsx`, `src/app/globals.css`) in Lorcana Compare (4,398px to 3,617px there).
+
+**Read:** phone bounce (non-Reddit) and buy clickers per 100 on the home page, the week after release against the week before.
