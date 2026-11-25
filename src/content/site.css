@@ -24,8 +24,8 @@
     radial-gradient(70rem 30rem at 85% -8rem, rgb(243 230 0 / 0.10), transparent 60%),
     radial-gradient(50rem 26rem at -10% 30rem, rgb(0 229 255 / 0.07), transparent 60%),
     linear-gradient(rgb(0 229 255 / 0.045) 1px, transparent 1px) 0 0 / 44px 44px,
-    linear-gradient(90deg, rgb(0 229 255 / 0.045) 1px, transparent 1px) 0 0 / 44px 44px,
-    var(--page-bg);
+    linear-gradient(90deg, rgb(0 229 255 / 0.045) 1px, transparent 1px) 0 0 / 44px 44px;
+  /* No page colour under it (2026-11-26): <html> carries it, and the lively look's lights (globals.css) show through the grid. */
 }
 /* CRT scanlines over the page, barely there. */
 :root:not([data-theme="light"]) body::after {

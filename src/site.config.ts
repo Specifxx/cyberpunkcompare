@@ -138,6 +138,13 @@ export const SITE: SiteConfig = {
     wordmarkGradient: "linear-gradient(180deg, #fffbb0 0%, #f3e600 55%, #b8ad00 100%)",
     displayFont: "Plus Jakarta Sans",
   },
+  // The lively look (owner, 2026-11-26): neon on black. Acid yellow is the shine, cyan and hot magenta the other two
+  // lights; the tiles take the neons in turn.
+  look: {
+    art: "grid",
+    lights: ["#f3e600", "#00e5ff", "#ff2a6d"],
+    hues: ["#f3e600", "#00e5ff", "#ff2a6d", "#7dff5a", "#5b8cff", "#ff7a1a"],
+  },
   halloween: {
     headline: "Night City after dark",
     blurb: "Find the cheapest Cyberpunk TCG boxes and chase cards before midnight.",

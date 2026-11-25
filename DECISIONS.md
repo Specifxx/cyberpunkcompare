@@ -1863,3 +1863,55 @@ solver unchanged (`lib/basket-optimize.ts`), the same port as DexCompare, MTG Co
 - **Free vs Premium:** everyone sees the delivered total and the saving. `/api/basket` returns the store-by-store plan (`/go`
   buy links, each store's shipping, the one-store order) only when RiftCompare's sister-premium status says the token is
   Premium right now. It is withheld in the response, not hidden with CSS.
+
+## 2026-11-26: the lively look (neon on black: a grid horizon, a reticle, HUD brackets, cards that catch the light)
+
+The owner, on the engine sites: "so dull … people aren't going to be like, wow, I found this really cool site, you should
+check it out … we want it to be a very nice experience, because even though it doesn't increase the functionality, it's
+like, oh, look, these sites are amazing." YGO Compare got its lively look the same day (ygocompare #268); this is the same
+idea on this engine, in this site's own identity, and Lorcana Compare gets it from the same engine files in its own.
+
+**This site's look** (`SITE.look`: `art: "grid"`): acid yellow is the shine, cyan and hot magenta the other two lights,
+and the tiles take the neons in turn. Behind the home headline: a reticle of dashed and segmented rings turning slowly,
+a perspective grid running to a horizon line across the hero's foot, a thin scan line drifting down, and four HUD
+brackets in the corners of the page's column. The headline's yellow word keeps its neon and its flicker and gains two
+ghosts of itself, cyan and magenta, that jump out of register for a blink every six seconds (CSS `content: attr(data-text)
+/ ""`, so nothing is read twice). Section titles wear two slashes (cyan, magenta) where `site.css` wrote "//"; the product
+photo's ring has square corners. Plain geometry of our own drawing only: no CD PROJEKT, Cyberpunk 2077 or WeirdCo logo,
+key art or card design. `src/content/site.css` (the 2026-11-02 neon theme) stays and still wins where it speaks; its one
+change is that `body` no longer paints the page colour under its grid, so the engine's lights show through.
+
+- **The page glows**: three soft fixed lights behind every page (`html::before`; `body` is transparent over `<html>`'s page
+  colour), a thread of light under the header and over the footer, a little light in every card surface.
+- **The filled bits catch the light**: a product tile or card link gets a lit edge, a halo, a 4px lift and a band of light
+  across it on hover; the hero's six trending links each take one of the six hues with a small marker; section titles
+  (`.sec-title`) wear a marker and page titles (`.page-title`) end in a short bar of light; the hero search has a lit edge
+  that brightens on focus; the primary button has a sheen.
+- **The product page**: the photo stands in a turning ring of the three lights (`.lv-frame`, one wrapper `div` round the
+  same `img`) and the TCGplayer market price is written in foil (`.lv-price`, a class on the same `span`).
+
+**How one engine wears two looks.** Everything is in the engine and byte-identical in both repos; a site turns it on and
+colours it with ONE option, `SITE.look` in `src/site.config.ts` (`art`, three `lights`, six `hues`). `lib/theme-vars.ts`
+(`lookCss`, inside `themeCss`) writes them as `--lv-a/b/c` and `--lv-h1…6`, with deeper ones for the light theme (the same
+5:1 rule as the brand's text colour); `app/layout.tsx` writes `data-look="<art>"` on `<html>`; the block "The lively look"
+at the end of `globals.css` does the rest, every selector scoped `:where(:root[data-look])` so a site's own
+`src/content/site.css` still wins a tie, and a site without `SITE.look` is exactly as before. `components/HeroArt.tsx`
+draws the hero art for the chosen `art` ("orbit" or "grid": shapes, never a game's name).
+
+**What did not change.** No URL, title, description, heading text, heading outline or JSON-LD; no block added, removed or
+reordered; no prompt, pop-up or banner; no ad placement or ad style (the art keeps to the page's 80rem column, so the
+window's sides stay free); no price row, its order or which button is filled; no product in the hero. The markup changes
+are: `<HeroArt />` (aria-hidden, about 1.7 KB on "orbit", 0.8 KB on "grid"), `data-text` on the headline's word, the class
+`lv-tiles` on the trending list, the wrapper round the product photo and the class on the price. The existing canvas of
+motes (`HeroSparks`) and the Santa hat stay.
+
+**Rules it keeps.** CSS only: no image or `url(`, no canvas, no new script, font or dependency. Motion is transform,
+opacity and gradient position, slow, and every animation is inside `prefers-reduced-motion: no-preference`. Nothing
+decorative is in the flow (absolute, `pointer-events: none`), so nothing shifts. Checked at 390px (no sideways scroll),
+1440px and 1920px, dark and light. `tests/lively-look.test.ts` pins: no `url(`, every animation inside the motion block
+and only those three properties in a keyframe, `:where()` scoping, the art hidden from readers and inside the column,
+and the light theme's look colours at 4.5:1 or better on white.
+
+Engine change, the same files in Lorcana Compare (which sets `art: "orbit"`, gold and its six inks). `engine.json` lists
+two repos (this one and `lorcanacompare`); BandaiCompare left the engine on 2026-11-08 and was not touched. Before/after
+pictures: `redesign/2026-11-26-cyberpunk-lively/` in the project files.
