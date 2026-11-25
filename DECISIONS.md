@@ -1808,3 +1808,11 @@ still under the 12-hour gate in `scripts/vercel-ignore-build.sh`), reversing the
 `production-deploy.yml`'s fallback runs daily and releases only if nothing has in 26 hours. The ops check "Live prices
 age" is red past 36 hours (was 8 days), and the home FAQ and card page say prices are published the same day. The amber
 CheckedAgo past 12 hours stays. Cost: about six extra builds a week per site, inside the $5–6 a day Vercel cap.
+
+## 2026-11-25 — Fiverr usability review, ported from TCG Prices
+
+A paid tester's think-aloud on TCG Prices (tcgcompare DECISIONS.md, 2026-11-25) asked whether we compare every store or only the
+ones that pay us, and found the product page's top too wordy. Ported here: under the price table, "Every store we track is
+listed, whether it pays us or not, in price order" linked to /methodology; "I own this" (its hint now a tooltip) and "Share deal"
+(was "Share this deal with your group chat") in one row; a long one-word store name wraps instead of pushing the price table
+past a phone's edge. Cart and watch wording wait for their A/B verdicts.
