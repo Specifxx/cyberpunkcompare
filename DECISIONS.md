@@ -1817,6 +1817,12 @@ listed, whether it pays us or not, in price order" linked to /methodology; "I ow
 (was "Share this deal with your group chat") in one row; a long one-word store name wraps instead of pushing the price table
 past a phone's edge. Cart and watch wording wait for their A/B verdicts.
 
+## 2026-11-26: The header's string of Christmas lights is removed (owner)
+
+Owner, 2026-11-26: "I don't really like the Christmas lights on the very top." The string of lights hanging under the header
+(2026-11-20) is removed on every Compare site: the `.xmas-garland::after` rule is gone from the `xmas-logo` block in `globals.css`
+and the class is off the header. The Santa hat on the logo stays, and nothing else of the Christmas layer changes.
+
 ## 2026-11-25 — Best Basket prices only what can be ordered today
 
 Ported from Rift Compare (its DECISIONS, 2026-11-25), where a Premium member was sent for two weeks to a store whose checkout
