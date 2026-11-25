@@ -1822,3 +1822,11 @@ past a phone's edge. Cart and watch wording wait for their A/B verdicts.
 Owner, 2026-11-26: "I don't really like the Christmas lights on the very top." The string of lights hanging under the header
 (2026-11-20) is removed on every Compare site: the `.xmas-garland::after` rule is gone from the `xmas-logo` block in `globals.css`
 and the class is off the header. The Santa hat on the logo stays, and nothing else of the Christmas layer changes.
+
+## 2026-11-25 — Best Basket prices only what can be ordered today
+
+Ported from Rift Compare (its DECISIONS, 2026-11-25), where a Premium member was sent for two weeks to a store whose checkout
+said the card was sold out. `basketUsable` (`lib/tools.ts`) keeps an offer in Best Basket only when it is in stock, not a
+pre-order, and from a store whose last good read (`meta.stores[key].at`, which a failed read leaves at its last success) is under
+`BASKET_MAX_AGE_H` (48h). Card pages keep showing a store's carried rows as before; only the plan that tells someone to buy now
+drops them. eBay and TCGplayer rows come from their own passes and are not store reads. `tests/basket-usable.test.ts`.
