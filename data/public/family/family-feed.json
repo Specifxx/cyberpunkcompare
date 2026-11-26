@@ -1,7 +1,7 @@
 {
  "v": 1,
  "site": "cyberpunk",
- "generatedAt": "2026-11-25T08:41:21.192Z",
+ "generatedAt": "2026-11-26T08:25:09.867Z",
  "links": {
   "US": {
    "deals": "https://cyberpunkcompare.com/black-friday",
@@ -19,9 +19,9 @@
    "currency": "USD",
    "store": "Wayward City Games",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714346_200w.jpg",
-   "refCents": 29777,
+   "refCents": 29082,
    "refLabel": "TCGplayer market price",
-   "savingPct": 33
+   "savingPct": 31
   },
   {
    "kind": "deal",
@@ -29,13 +29,27 @@
    "region": "US",
    "title": "Welcome to Night City - Retail Booster Box",
    "url": "https://cyberpunkcompare.com/card/welcome-to-night-city-retail-booster-box",
-   "cents": 9999,
+   "cents": 9600,
    "currency": "USD",
-   "store": "Hobby Addicts",
+   "store": "Topspot Cards",
    "image": "https://tcgplayer-cdn.tcgplayer.com/product/714495_200w.jpg",
-   "refCents": 11848,
+   "refCents": 12005,
    "refLabel": "TCGplayer market price",
-   "savingPct": 16
+   "savingPct": 20
+  },
+  {
+   "kind": "deal",
+   "cluster": "cards",
+   "region": "US",
+   "title": "Royce - Psycho on the Edge (ILegend)",
+   "url": "https://cyberpunkcompare.com/card/royce-psycho-on-the-edge-ilegend-welcome-to-night-city-beta",
+   "cents": 4836,
+   "currency": "USD",
+   "store": "PunkOuter Games",
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714305_200w.jpg",
+   "refCents": 5536,
+   "refLabel": "TCGplayer market price",
+   "savingPct": 13
   },
   {
    "kind": "deal",
@@ -50,20 +64,6 @@
    "refCents": 19229,
    "refLabel": "TCGplayer market price",
    "savingPct": 13
-  },
-  {
-   "kind": "deal",
-   "cluster": "cards",
-   "region": "US",
-   "title": "Royce - Psycho on the Edge (ILegend)",
-   "url": "https://cyberpunkcompare.com/card/royce-psycho-on-the-edge-ilegend-welcome-to-night-city-beta",
-   "cents": 4864,
-   "currency": "USD",
-   "store": "PunkOuter Games",
-   "image": "https://tcgplayer-cdn.tcgplayer.com/product/714305_200w.jpg",
-   "refCents": 5533,
-   "refLabel": "TCGplayer market price",
-   "savingPct": 12
   },
   {
    "kind": "deal",
