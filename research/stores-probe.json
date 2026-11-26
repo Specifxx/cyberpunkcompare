@@ -1,0 +1,555 @@
+{
+ "probedOn": "2026-11-26",
+ "stores": [
+  {
+   "key": "battlebearsb",
+   "name": "Battle Bear Saarbrücken",
+   "base": "https://www.battle-bear-sb.de",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk-tcg-events",
+     "count": 5,
+     "ygo": 1,
+     "sample": 1,
+     "sealed": 0,
+     "singles": 1
+    }
+   ],
+   "sampleTitles": [
+    "Cyberpunk - Night City Showdown - 29.11.2026"
+   ]
+  },
+  {
+   "key": "cardsplace",
+   "name": "Cardsplace",
+   "base": "https://cardsplace.de",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk-trading-card-game",
+     "count": 3,
+     "ygo": 3,
+     "sample": 3,
+     "sealed": 3,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-trading-card-game-starter-decks",
+     "count": 2,
+     "ygo": 2,
+     "sample": 2,
+     "sealed": 2,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-trading-card-game-booster-displays",
+     "count": 1,
+     "ygo": 1,
+     "sample": 1,
+     "sealed": 1,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Cyberpunk Trading Card Game - Welcome to Night City Starter Deck (The Heist) - English",
+    "Cyberpunk Trading Card Game - Welcome to Night City Starter Deck (Embracing Power) - English",
+    "Cyberpunk Trading Card Game - Welcome to Night City Booster Display - English",
+    "Cyberpunk Trading Card Game - Welcome to Night City Starter Deck (Embracing Power) - English",
+    "Cyberpunk Trading Card Game - Welcome to Night City Starter Deck (The Heist) - English",
+    "Cyberpunk Trading Card Game - Welcome to Night City Booster Display - English"
+   ]
+  },
+  {
+   "key": "dctrading",
+   "name": "DC-Trading",
+   "base": "https://dctrading.at",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk-tcg",
+     "count": 3,
+     "ygo": 3,
+     "sample": 3,
+     "sealed": 3,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Welcome to Night City Retail Booster Box – EN",
+    "Welcome to Night City The Heist Retail Starter Deck – EN",
+    "Welcome to Night City Embracing Power Retail Starter Deck – EN"
+   ]
+  },
+  {
+   "key": "discarded",
+   "name": "Discarded",
+   "base": "https://discarded.ie",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk-tcg",
+     "count": 2,
+     "ygo": 2,
+     "sample": 2,
+     "sealed": 2,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Welcome To Night City Booster Pack",
+    "Welcome To Night City Booster Box (24 Packs)"
+   ]
+  },
+  {
+   "key": "endturn",
+   "name": "End Turn",
+   "base": "https://endturn.pt",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk",
+     "count": 192,
+     "ygo": 40,
+     "sample": 40,
+     "sealed": 0,
+     "singles": 40
+    },
+    {
+     "handle": "cyberpunk-single",
+     "count": 191,
+     "ygo": 40,
+     "sample": 40,
+     "sealed": 0,
+     "singles": 40
+    },
+    {
+     "handle": "welcome-to-night-city-retail",
+     "count": 154,
+     "ygo": 40,
+     "sample": 40,
+     "sealed": 0,
+     "singles": 40
+    },
+    {
+     "handle": "welcome-to-night-city-beta",
+     "count": 29,
+     "ygo": 18,
+     "sample": 18,
+     "sealed": 0,
+     "singles": 18
+    }
+   ],
+   "sampleTitles": [
+    "Pepe Najarro - Working Doubles - Welcome to Night City - Retail (Uncommon) [MS01-086]",
+    "Nocturne OP55 N1 - Welcome to Night City - Retail (Rare) [MS01-134]",
+    "Pyramid Song - Welcome to Night City - Retail (Rare) [MS01-135]",
+    "Dum Dum - Maelstrom Triggerman - Pre-Release Beta (Rare) [PRR01-003]",
+    "Pepe Najarro - Working Doubles - Welcome to Night City - Retail (Uncommon) [MS01-086]",
+    "Nocturne OP55 N1 - Welcome to Night City - Retail (Rare) [MS01-134]",
+    "Pyramid Song - Welcome to Night City - Retail (Rare) [MS01-135]",
+    "Dum Dum - Maelstrom Triggerman - Pre-Release Beta (Rare) [PRR01-003]",
+    "Pepe Najarro - Working Doubles - Welcome to Night City - Retail (Uncommon) [MS01-086]",
+    "Nocturne OP55 N1 - Welcome to Night City - Retail (Rare) [MS01-134]",
+    "Pyramid Song - Welcome to Night City - Retail (Rare) [MS01-135]",
+    "MaxTac Suppression Team - Welcome to Night City - Retail (Common) [MS01-050]"
+   ]
+  },
+  {
+   "key": "fireanddice",
+   "name": "Fire & Dice",
+   "base": "https://fireanddice.it",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk",
+     "count": 5,
+     "ygo": 5,
+     "sample": 5,
+     "sealed": 5,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-starter-decks",
+     "count": 4,
+     "ygo": 4,
+     "sample": 4,
+     "sealed": 4,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-booster-boxes",
+     "count": 2,
+     "ygo": 2,
+     "sample": 2,
+     "sealed": 2,
+     "singles": 0
+    },
+    {
+     "handle": "welcome-to-night-city-beta",
+     "count": 1,
+     "ygo": 1,
+     "sample": 1,
+     "sealed": 1,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "The Heist - Retail Starter Deck",
+    "Embracing Power - Retail Starter Deck",
+    "Welcome to Night City - Retail Booster Box",
+    "The Heist - Beta Starter Deck - The Heist - Beta Starter Deck",
+    "The Heist - Retail Starter Deck",
+    "Embracing Power - Retail Starter Deck",
+    "Embracing Power - Beta Starter Deck - Embracing Power - Beta Starter Deck",
+    "The Heist - Beta Starter Deck - The Heist - Beta Starter Deck",
+    "Welcome to Night City - Retail Booster Box",
+    "Welcome to Night City - Beta Booster Box - Welcome to Night City - Beta",
+    "Welcome to Night City - Beta Booster Box - Welcome to Night City - Beta"
+   ]
+  },
+  {
+   "key": "gsgameon",
+   "name": "GS-Gameon",
+   "base": "https://www.gs-gameon.com",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk",
+     "count": 48,
+     "ygo": 28,
+     "sample": 28,
+     "sealed": 0,
+     "singles": 28
+    },
+    {
+     "handle": "cyberpunk-single",
+     "count": 46,
+     "ygo": 28,
+     "sample": 28,
+     "sealed": 0,
+     "singles": 28
+    },
+    {
+     "handle": "welcome-to-night-city-beta",
+     "count": 45,
+     "ygo": 28,
+     "sample": 28,
+     "sealed": 0,
+     "singles": 28
+    },
+    {
+     "handle": "sigillati-cyberpunk",
+     "count": 3,
+     "ygo": 1,
+     "sample": 1,
+     "sealed": 1,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Live with the Aftermath - Welcome to Night City - Beta (Common) [MS01b-068]",
+    "Adrenaline Converter - Welcome to Night City - Beta (Common) [MS01b-059]",
+    "Viktor Vektor - You Might Feel a Little Pinch - Welcome to Night City - Beta (Uncommon) [MS01b-058]",
+    "Augmented Negotiators - Welcome to Night City - Beta (Common) [MS01b-043]",
+    "Live with the Aftermath - Welcome to Night City - Beta (Common) [MS01b-068]",
+    "Adrenaline Converter - Welcome to Night City - Beta (Common) [MS01b-059]",
+    "Viktor Vektor - You Might Feel a Little Pinch - Welcome to Night City - Beta (Uncommon) [MS01b-058]",
+    "Augmented Negotiators - Welcome to Night City - Beta (Common) [MS01b-043]",
+    "Live with the Aftermath - Welcome to Night City - Beta (Common) [MS01b-068]",
+    "Adrenaline Converter - Welcome to Night City - Beta (Common) [MS01b-059]",
+    "Viktor Vektor - You Might Feel a Little Pinch - Welcome to Night City - Beta (Uncommon) [MS01b-058]",
+    "Augmented Negotiators - Welcome to Night City - Beta (Common) [MS01b-043]"
+   ]
+  },
+  {
+   "key": "manamarket",
+   "name": "ManaMarket",
+   "base": "https://manamarket.eu",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk",
+     "count": 23,
+     "ygo": 23,
+     "sample": 23,
+     "sealed": 23,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-single",
+     "count": 20,
+     "ygo": 20,
+     "sample": 20,
+     "sealed": 20,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-singles",
+     "count": 20,
+     "ygo": 20,
+     "sample": 20,
+     "sealed": 20,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-starter-decks",
+     "count": 4,
+     "ygo": 4,
+     "sample": 4,
+     "sealed": 4,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-sealed",
+     "count": 3,
+     "ygo": 3,
+     "sample": 3,
+     "sealed": 3,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-booster-boxes",
+     "count": 2,
+     "ygo": 2,
+     "sample": 2,
+     "sealed": 2,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-box-sets",
+     "count": 1,
+     "ygo": 1,
+     "sample": 1,
+     "sealed": 1,
+     "singles": 0
+    },
+    {
+     "handle": "welcome-to-night-city-retail",
+     "count": 1,
+     "ygo": 1,
+     "sample": 1,
+     "sealed": 1,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Welcome to Night City - Retail Booster Box - Welcome to Night City - Retail",
+    "Corporate Surveillance - Embracing Power - Beta Starter Deck (Uncommon) [SD02b-020]",
+    "Sandevistan - Embracing Power - Beta Starter Deck (Uncommon) [SD02b-019]",
+    "MaxTac AV - Embracing Power - Beta Starter Deck (Common) [SD02b-018]",
+    "Sandevistan - Embracing Power - Beta Starter Deck (Uncommon) [SD02b-019]",
+    "Swordwise Huscle - Embracing Power - Beta Starter Deck (Common) [SD02b-005]",
+    "Field Operator - Embracing Power - Beta Starter Deck (Common) [SD02b-016]",
+    "Arasaka Emergency Radioport - Embracing Power - Beta Starter Deck (Common) [SD02b-006]",
+    "Corporate Surveillance - Embracing Power - Beta Starter Deck (Uncommon) [SD02b-020]",
+    "Sandevistan - Embracing Power - Beta Starter Deck (Uncommon) [SD02b-019]",
+    "MaxTac AV - Embracing Power - Beta Starter Deck (Common) [SD02b-018]",
+    "Field Operator - Embracing Power - Beta Starter Deck (Common) [SD02b-016]"
+   ]
+  },
+  {
+   "key": "miraicards",
+   "name": "Mirai Cards Portugal",
+   "base": "https://miraicards.pt",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk",
+     "count": 3,
+     "ygo": 3,
+     "sample": 3,
+     "sealed": 3,
+     "singles": 0
+    },
+    {
+     "handle": "welcome-to-night-city",
+     "count": 3,
+     "ygo": 3,
+     "sample": 3,
+     "sealed": 3,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Cyberpunk - Welcome to Night City Booster Box",
+    "Cyberpunk - Welcome to Night City Starter Deck: Embracing Power [BETA]",
+    "Cyberpunk - Welcome to Night City Starter Deck: The Heist [BETA]",
+    "Cyberpunk - Welcome to Night City Booster Box",
+    "Cyberpunk - Welcome to Night City Starter Deck: Embracing Power [BETA]",
+    "Cyberpunk - Welcome to Night City Starter Deck: The Heist [BETA]"
+   ]
+  },
+  {
+   "key": "mytradingcards",
+   "name": "mytradingcards",
+   "base": "https://my-tradingcards.de",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk-tcg",
+     "count": 3,
+     "ygo": 3,
+     "sample": 3,
+     "sealed": 3,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Welcome To Night City | Starter Deck - The Heist (EN)",
+    "Welcome To Night City | Starter Deck - Embracing Power (EN)",
+    "Welcome To Night City | 24pc Booster Display (EN)"
+   ]
+  },
+  {
+   "key": "oportogg",
+   "name": "OportoGG",
+   "base": "https://oportogg.com",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk-tcg",
+     "count": 2,
+     "ygo": 2,
+     "sample": 2,
+     "sealed": 2,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Cyberpunk TCG – Welcome to Night City – Booster Pack (EN)",
+    "Cyberpunk TCG – Welcome to Night City – Booster Box (24) EN"
+   ]
+  },
+  {
+   "key": "outpostbrussels",
+   "name": "OutpostBrussels",
+   "base": "https://outpostbrussels.be",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk",
+     "count": 3,
+     "ygo": 3,
+     "sample": 3,
+     "sealed": 3,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Cyberpunk TCG - Welcome to Night City - Embracing Power Starter Deck - EN",
+    "Cyberpunk TCG - Welcome to Night City - The Heist Starter Deck - EN",
+    "Cyberpunk TCG - Welcome to Night City - Booster Display (24) - EN"
+   ]
+  },
+  {
+   "key": "pelikrypta",
+   "name": "Pelikrypta Ikamaa",
+   "base": "https://pelikrypta.fi",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "tuoteryhma-cyberpunk-red-combat-zone",
+     "count": 32,
+     "ygo": 15,
+     "sample": 15,
+     "sealed": 5,
+     "singles": 10
+    }
+   ],
+   "sampleTitles": [
+    "Cyberpunk Edgerunners Combat Zone: The Cub hunt",
+    "Cyberpunk Edgerunners Combat Zone: Filthy Meatbags",
+    "Cyberpunk Red Combat Zone: Maelstrom Starter",
+    "Cyberpunk Red Combat Zone: The Ferm"
+   ]
+  },
+  {
+   "key": "thehouseofgames",
+   "name": "House of Games",
+   "base": "https://thehouseofgames.eu",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cp-welcome-to-night-city",
+     "count": 5,
+     "ygo": 4,
+     "sample": 4,
+     "sealed": 4,
+     "singles": 0
+    },
+    {
+     "handle": "cyberpunk-tcg",
+     "count": 5,
+     "ygo": 4,
+     "sample": 4,
+     "sealed": 4,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Cyberpunk Welcome to Night City Retail Booster",
+    "Cyberpunk Welcome to Night City Retail Booster Display (24 Packs)",
+    "Cyberpunk Welcome to Night City Starter Deck - The Heist",
+    "Cyberpunk Welcome to Night City Starter Deck - Embracing Power",
+    "Cyberpunk Welcome to Night City Retail Booster",
+    "Cyberpunk Welcome to Night City Retail Booster Display (24 Packs)",
+    "Cyberpunk Welcome to Night City Starter Deck - The Heist",
+    "Cyberpunk Welcome to Night City Starter Deck - Embracing Power"
+   ]
+  },
+  {
+   "key": "treasurehubtcg",
+   "name": "TreasureHub TCG",
+   "base": "https://treasurehubtcg.com",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk-tcg",
+     "count": 5,
+     "ygo": 5,
+     "sample": 5,
+     "sealed": 4,
+     "singles": 1
+    }
+   ],
+   "sampleTitles": [
+    "CyberPunk Welcome to Night City Display",
+    "PreRelease Cyberpunk WtNC",
+    "Starter Deck - Welcome to Night City - Embracing Power",
+    "Starter Deck - Welcome to Night City - The Heist"
+   ]
+  },
+  {
+   "key": "versusgamecenter",
+   "name": "Versus Gamecenter",
+   "base": "https://versusgamecenter.pt",
+   "market": "EU",
+   "collections": [
+    {
+     "handle": "cyberpunk-tcg",
+     "count": 5,
+     "ygo": 3,
+     "sample": 3,
+     "sealed": 2,
+     "singles": 1
+    },
+    {
+     "handle": "welcome-to-night-city",
+     "count": 4,
+     "ygo": 2,
+     "sample": 2,
+     "sealed": 2,
+     "singles": 0
+    }
+   ],
+   "sampleTitles": [
+    "Inscrição: Cyberpunk Welcome to Night City Prerelease Event - 29 de Novembro",
+    "Cyberpunk TCG - Welcome to Night City Booster Display (24 Packs) - EN",
+    "Cyberpunk TCG - Welcome to Night City Booster - EN",
+    "Cyberpunk TCG - Welcome to Night City Booster Display (24 Packs) - EN",
+    "Cyberpunk TCG - Welcome to Night City Booster - EN"
+   ]
+  }
+ ]
+}
