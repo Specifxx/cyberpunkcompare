@@ -13,6 +13,7 @@ export const SITE: SiteConfig = {
   wordmark: ["CYBERPUNK", "COMPARE"],
   game: "Cyberpunk TCG",
   gameShort: "Cyberpunk TCG",
+  guideExamples: ["Johnny Silverhand", "Booster Box", "Starter Deck"],
   domain: "cyberpunkcompare.com",
   // The bare domain is the address (owner, 2026-11-01: cyberpunkcompare.com).
   apexHost: true,
