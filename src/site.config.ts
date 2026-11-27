@@ -133,8 +133,8 @@ export const SITE: SiteConfig = {
     brandLight: "#fff45c",
     brandDark: "#b8ad00",
     accent: "#00e5ff",
-    pageDark: "#08080b",
-    inkDark: ["#050507", "#0d0d12", "#14141b", "#1c1c26", "#2d2d3b", "#474759"],
+    pageDark: "#090a0c", // design v2 (2026-11-27): neutral near-black
+    inkDark: ["#090a0c", "#111215", "#181a1e", "#1f2126", "#2c2e35", "#3e4149"],
     wordmarkGradient: "linear-gradient(180deg, #fffbb0 0%, #f3e600 55%, #b8ad00 100%)",
     displayFont: "Plus Jakarta Sans",
   },
