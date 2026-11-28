@@ -1,0 +1,58 @@
+{
+ "v": 1,
+ "site": "cyberpunkcompare.com",
+ "at": "2026-11-28T08:22:27.038Z",
+ "overall": "warn",
+ "checks": [
+  {
+   "name": "Live site",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "name": "Live prices age",
+   "status": "ok",
+   "detail": "live prices 10h old (daily release)"
+  },
+  {
+   "name": "A card page",
+   "status": "ok",
+   "detail": "200"
+  },
+  {
+   "name": "Best Basket shipping",
+   "status": "ok",
+   "detail": "187 of 256 stores measured, 0h old"
+  },
+  {
+   "name": "Daily price import",
+   "status": "ok",
+   "detail": "0.5h old"
+  },
+  {
+   "name": "Store imports",
+   "status": "warn",
+   "detail": "irresistibleforce: 0 matched; vaultcollectables: 0 matched; lamoodcomics: 0 matched; cardcollector: 0 matched; goosegames: 0 matched; loufoque: 0 matched; lagildastore: 0 matched; nordiclegends: 0 matched; 1collectiblestcg: 0 matched; grimdice: 0 matched; boardgamesdallas: 0 matched; gglehi: 0 matched; gamersguildaz: 0 matched; evvgamingguild: 0 matched; kryptonitekollectibles: 0 matched; lspbstore: 0 matched; magessanctum: 0 matched; stateofcomics: 0 matched; wolcowgaming: 0 matched; azcardtrading: 0 matched; tcggarden: 0 matched; battlebearsb: 0 matched; manamarket: 0 matched; outpostbrussels: 0 matched; pelikrypta: 0 matched; versusgamecenter: 0 matched; 4gsgames: 0 matched; mysterymtg: 0 matched; pullbighits: 0 matched; recessgames: 0 matched"
+  },
+  {
+   "name": "eBay budget",
+   "status": "ok",
+   "detail": "484/600 calls on 2026-11-28, 124 eligible"
+  },
+  {
+   "name": "Family feed",
+   "status": "ok",
+   "detail": "5 items, 0.5h old; 9 sister feeds (rift, op, dex, mtg, gundam, lorcana, ygo, bandai, sealed)"
+  },
+  {
+   "name": "Amazon ASIN finder",
+   "status": "ok",
+   "detail": "AU: ok, 2 ASINs, 0h ago; CA: ok, 0 ASINs, 0h ago; EU: ok, 0 ASINs, 0h ago; UK: ok, 0 ASINs, 0h ago; US: ok, 4 ASINs, 0h ago"
+  },
+  {
+   "name": "Fetch TCG row",
+   "status": "ok",
+   "detail": "the Fetch TCG row is on /card/dont-fear-the-reaper"
+  }
+ ]
+}
